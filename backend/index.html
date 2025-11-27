@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hisotek Việt Nam</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Inter", sans-serif;
+    }
+
+    body {
+      color: white;
+      background: linear-gradient(135deg, #0a0a0a, #1b1b1b);
+      height: auto; /* Để chiều cao tự động */
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 80px;
+      background: rgba(0, 0, 0, 0.7);
+      width: 100%;
+      position: absolute;
+      top: 0;
+      z-index: 10;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 700;
+      font-size: 20px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 40px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #3aa0ff;
+    }
+
+    .hero-container {
+      position: relative;
+      background-image: url('https://images.unsplash.com/photo-1527430253228-e93688616381?fit=crop&w=1920&q=80');
+      background-size: cover;
+      background-position: center;
+      padding-bottom: 20px; /* Thêm padding dưới để tạo khoảng cách */
+    }
+
+    .hero {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh; /* Chiều cao toàn bộ viewport */
+    }
+
+    .slide {
+      display: none;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      height: 100%;
+      width: 100%;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .active {
+      display: flex;
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      font-weight: 800;
+      line-height: 1.3;
+      margin-bottom: 20px;
+      max-width: 800px;
+      text-align: center;
+    }
+
+    .hero p {
+      max-width: 700px;
+      font-size: 18px;
+      line-height: 1.5;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    .tabs {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .tab {
+      height: 4px;
+      width: 30px; /* Độ dài của dấu gạch */
+      background: gray;
+      margin: 0 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .active-tab {
+      background: white;
+    }
+
+    .box1 {
+        background: white;
+    }
+
+    .info-container {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 20px;
+      padding: 20px 0;
+      background-color: rgba(0, 0, 0, 0.7);
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+      width: 100%; /* Chiều rộng 100% */
+      position: relative; /* Thêm position relative */
+      padding: 40px 0; /* Thêm padding để làm cho nó rộng hơn */
+    }
+
+    .info-box {
+      text-align: center;
+      color: white;
+      width: 20%; /* Đặt chiều rộng cho từng ô */
+      transition: transform 0.3s, box-shadow 0.3s;
+      padding: 20px;
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.1); /* Nền mờ */
+    }
+
+    .info-box h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .info-box p {
+      font-size: 14px;
+      color: #ccc; /* Màu chữ nhạt hơn cho mô tả */
+    }
+
+    .info-box.active {
+      transform: scale(1.1); /* Phóng to ô khi active */
+      box-shadow: 0 0 20px #3aa0ff; /* Ánh sáng phát ra */
+    }
+
+    .container-toggle {
+        display: flex;
+        position: relative;
+    }
+
+    .box {
+        transition: transform 0.5s cubic-bezier(.22,.9,.28,1);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <img src="https://i.imgur.com/h7x6oSg.png" alt="Logo" height="40" />
+    HISOTEK VIET NAM
+  </div>
+  <nav>
+    <ul>
+      <li><a href="#">Sản phẩm & Giải pháp</a></li>
+      <li><a href="#">Tin tức</a></li>
+      <li><a href="#">Về chúng tôi</a></li>
+      <li><a href="#">Liên hệ với chúng tôi</a></li>
+    </ul>
+  </nav>
+  <div class="lang">🌐 VN</div>
+</header>
+
+<div class="hero-container">
+  <section class="hero">
+    <div class="slide active slide1">
+      <h1>CHÍNH PHỦ SỐ</h1>
+      <p>Dịch vụ công thông minh, hiện đại hóa quản lý nhà nước.</p>
+    </div>
+    <div class="slide slide2 ">
+      <h1>CHUYỂN ĐỔI SỐ</h1>
+      <p>Vận hành dữ liệu hiệu quả, tối ưu hóa quy trình làm việc.</p>
+    </div>
+    <div class="slide slide3">
+      <h1>SaaS DOANH NGHIỆP</h1>
+      <p>Giải pháp linh hoạt giúp doanh nghiệp quản lý và phân tích dữ liệu dễ dàng.</p>
+    </div>
+    <div class="slide slide4">
+      <h1>OSINT điều tra số</h1>
+      <p>Trí tuệ đảm bảo chứng minh</p>
+    </div>
+  </section>
+
+  <div class="tabs container-toggle">
+    <div class="tab box box1" onclick="showSlide(0)"></div>
+    <div class="tab box box2" onclick="showSlide(1)"></div>
+    <div class="tab box box3" onclick="showSlide(2)"></div>
+    <div class="tab box box4" onclick="showSlide(3)"></div>
+  </div>
+</div>
+
+<div class="info-container">
+  <div class="info-box active" id="info-0">
+    <h3>Chính phủ số</h3>
+    <p>Dịch vụ công thông minh</p>
+  </div>
+  <div class="info-box" id="info-1">
+    <h3>Chuyển đổi số</h3>
+    <p>Vận hành dữ liệu hiệu quả</p>
+  </div>
+  <div class="info-box" id="info-2">
+    <h3>SaaS doanh nghiệp</h3>
+    <p>Giải pháp linh hoạt</p>
+  </div>
+  <div class="info-box" id="info-3">
+    <h3>OSINT điều tra số</h3>
+    <p>Trí tuệ đảm bảo chứng minh</p>
+  </div>
+</div>
+
+<div class="container">
+  <h1>Công nghệ Trí tuệ Nhân tạo cho doanh nghiệp tăng tốc</h1>
+  <div class="cards">
+    <div class="card">
+      <div class="content">
+        <h2>02+</h2>
+        <p>Năm kinh nghiệm trong ngành công nghệ, trí tuệ nhân tạo</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="content">
+        <h2>05+</h2>
+        <p>Các giải pháp đa dạng</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="content">
+        <h2>30+</h2>
+        <p>Giải pháp cho nhiều ngành nghề khác nhau</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="content">
+        <h2>20+</h2>
+        <p>Dự án thành công</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="image-container">
+  <div class="image-card">
+    <img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0" alt="Image 1">
+    <p>Dịch vụ toàn diện</p>
+  </div>
+  <div class="image-card">
+    <img src="https://images.unsplash.com/photo-1527430253228-e93688616381" alt="Image 2">
+    <p>Phạm vi toàn cầu</p>
+  </div>
+  <div class="image-card">
+    <img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0" alt="Image 3">
+    <p>Đổi mới tư duy chính</p>
+  </div>
+  <div class="image-card">
+    <img src="https://images.unsplash.com/photo-1527430253228-e93688616381" alt="Image 4">
+    <p>Đội ngũ chuyên gia</p>
+  </div>
+</div>
+<script>
+  let currentSlide = 0;
+  const slides = document.querySelectorAll('.slide');
+//   const tabs = document.querySelectorAll('.tab');
+  const infoBoxes = document.querySelectorAll('.info-box');
+
+  // handle toggle
+  const container = document.querySelector('.container-toggle');
+  const boxes = document.querySelectorAll('.box');
+  let swapped = [1 ,0 ,0, 0];
+  console.log(boxes);
+  
+
+  function showSlide(index) {
+    slides[currentSlide].classList.remove('active');
+    // tabs[currentSlide].classList.remove('active-tab');
+    infoBoxes[currentSlide].classList.remove('active');
+
+    currentSlide = index;
+
+    slides[currentSlide].classList.add('active');
+    // tabs[currentSlide].classList.add('active-tab');
+    infoBoxes[currentSlide].classList.add('active');
+  }
+
+  function nextSlide() {
+
+    const nextIndex = (currentSlide + 1) % slides.length;
+    showSlide(nextIndex);
+
+    // handle toggle
+    // 1️⃣ Lấy vị trí ban đầu cua cac boxer
+    const firstRects = Array.from(boxes).map(b => b.getBoundingClientRect());
+    // console.log(firstRects);
+    // console.log(container);
+    
+    // 2️⃣ Cập nhật DOM: đổi thứ tự 2 box
+    switch (swapped.indexOf(1)) {
+        case 0:
+            container.insertBefore(boxes[1], boxes[0]);
+            swapped = [0, 1, 0, 0];
+            break;
+
+        case 1:
+            container.insertBefore(boxes[2], boxes[0]);
+            swapped = [0, 0, 1, 0];
+            break;
+
+        case 2:
+            container.insertBefore(boxes[3], boxes[0]);
+            swapped = [0, 0, 0, 1];
+            break;
+
+        case 3:
+            container.insertBefore(boxes[0], boxes[1]);
+            swapped = [1, 0, 0, 0];
+            break;
+    
+        default:
+            break;
+    }
+    console.log(swapped);
+    
+
+    // 3️⃣ Lấy vị trí mới
+    const lastRects = Array.from(boxes).map(b => b.getBoundingClientRect());
+    console.log(lastRects);
+    
+
+    // 4️⃣ FLIP animation
+    boxes.forEach((box, i) => {
+      const dx = firstRects[i].left - lastRects[i].left;
+      const dy = firstRects[i].top - lastRects[i].top;
+
+      // Đặt box về vị trí cũ
+      box.style.transform = `translate(${dx}px, ${dy}px)`;
+      box.style.transition = 'none';
+
+      // Bắt buộc reflow
+      box.offsetWidth;
+
+      // Animate đến vị trí mới
+      box.style.transform = '';
+      box.style.transition = 'transform 0.6s cubic-bezier(.22,.9,.28,1)';
+    });
+    // end handle toggle
+  }
+
+  setInterval(nextSlide, 5000); // Chuyển đổi mỗi 5 giây
+
+
+  const imageCards = document.querySelectorAll('.image-card');
+
+  imageCards.forEach(card => {
+    card.addEventListener('mouseenter', () => {
+      imageCards.forEach(c => {
+        if (c !== card) {
+          c.style.flex = '0 0 20%'; // Giảm kích thước các ảnh khác
+        } else {
+          c.style.flex = '0 0 40%'; // Tăng kích thước ảnh đang hover
+        }
+      });
+    });
+
+    card.addEventListener('mouseleave', () => {
+      imageCards.forEach(c => {
+        c.style.flex = '0 0 25%'; // Đặt lại kích thước tất cả các ảnh
+      });
+    });
+  });
+</script>
+
+</body>
+</html>

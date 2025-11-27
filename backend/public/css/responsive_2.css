@@ -1,0 +1,1365 @@
+/* ============================================
+   RESPONSIVE CSS - BREAKPOINTS STRUCTURE
+   ============================================ */
+
+/* ============================================
+   1. MÀN HÌNH BÉ HƠN HOẶC BẰNG 380px
+   ============================================ */
+@media (max-width: 380px) {
+
+	/* Styles cho màn hình rất nhỏ (điện thoại nhỏ) */
+
+	.hero-actions {
+
+		justify-content: center !important;
+	}
+
+	.info-container-wrapper {
+		/* padding: 0 12px 24px 12px; */
+		margin-top: 0px !important;
+		position: absolute;
+		bottom: 0% !important;
+		left: auto;
+		right: auto;
+		bottom: auto;
+		z-index: 1;
+		background: transparent;
+	}
+
+	.info-container-wrapper .info-container {
+		gap: 0px !important;
+	}
+
+	.info-box-content h3 {
+		font-size: 16px !important;
+		line-height: 24px !important;
+		letter-spacing: 0.15px !important;
+		font-weight: 600 !important;
+	}
+
+	.info-box-content p {
+		font-size: 12px !important;
+		line-height: 18px !important;
+		letter-spacing: 0.15px !important;
+		font-weight: 400 !important;
+	}
+
+	.container-toggle-parent {
+		margin-bottom: 31px !important;
+	}
+
+	/* Style cho phần Card trong màn hình rất nhỏ */
+	#content-container {
+		padding: 7px 12px !important;
+	}
+
+	.cards {
+		gap: 6px !important;
+	}
+
+	/* Style cho phần content container trong màn hình rất nhỏ */
+	.image-container {
+		height: 200vh;
+	}
+
+	.image-card {
+		position: relative;
+		flex: 0 0 50vh;
+		/* Mỗi ảnh chiếm 25% */
+		overflow: hidden;
+		transition: flex 0.3s ease;
+		/* Hiệu ứng cho flex */
+		text-align: center;
+		height: 600px;
+		/* Đặt chiều cao cho card */
+	}
+
+	.image-card img {
+		width: 100% !important;
+		height: 100% !important;
+	}
+
+	/* Style Keybad case trong màn hình nhỏ */
+	.kebad-case-1111 {
+		padding-top: 24px !important;
+		padding-bottom: 0px !important;
+	}
+
+	.kebad-case-1111 .kebad-case-2222 {
+		min-height: 100vh !important;
+	}
+
+	.kebad-case-1111 .kebad-case-4444 {
+		line-height: 100% !important;
+		margin-bottom: 16px !important;
+	}
+
+	.kebad-case-1111 .kebad-case-5555 {
+		display: none !important;
+	}
+
+	.kebad-case-1111 .kebad-case-8888 {
+		font-size: 16px !important;
+		line-height: 24px !important;
+		font-weight: 600 !important;
+		padding: 12px 16px !important;
+	}
+
+	.kebad-case-1111 .kebad-case-2222 {
+		gap: 0px !important;
+	}
+
+	.kebad-case-1111 .kebad-case-1414 {
+		padding: 16px 16px !important;
+		gap: 0px !important;
+	}
+
+	.kebad-case-1111 .kebad-case-1616 {
+		margin-bottom: 16px !important;
+	}
+
+	.kebad-case-1111 .kebad-case-2323 {
+		margin-bottom: 8px !important;
+	}
+
+	.kebad-case-1111 .kebad-case-2424 {
+		font-weight: 400 !important;
+		font-size: 12px !important;
+		line-height: 18px !important;
+		letter-spacing: 0.15px !important;
+	}
+
+	.kebad-case-1111 .kebad-case-2223 {
+		margin-bottom: 8px !important;
+	}
+
+	.kebad-case-1111 .kebad-case-2020 {
+		font-weight: 400 !important;
+		font-size: 12px !important;
+		line-height: 18px !important;
+		letter-spacing: 0.15px !important;
+	}
+
+	.kebad-case-1111 .kebad-case-1616 {
+		max-height: 160px !important;
+	}
+
+	#capabilities-tabs .nav-link {
+		font-weight: 600 !important;
+		font-size: 16px !important;
+		line-height: 24px !important;
+		letter-spacing: 0.15px !important;
+		padding: 8px 12px !important;
+	}
+
+	/* Style cho phần business-tabs trong màn hình nhỏ */
+	.bussiness-class-8888 {
+		min-height: 100vh !important;
+	}
+
+	.bussiness-class-1111 .bussiness-class-1616 {
+		width: 40px !important;
+		height: 40px !important;
+	}
+
+	.bussiness-class-1111 .bussiness-class-1212 {
+		/* display: none !important; */
+		margin-top: -17px !important;
+	}
+
+	#business-hero.bussiness-class-1111 {
+		padding: 0px 0px !important;
+	}
+
+	.bussiness-class-1111 .bussiness-class-1212 br{
+		display: none !important;
+	}
+
+	.bussiness-class-1111 .bussiness-class-1414 {
+		gap: 0px !important;
+		margin-top: 0px !important;
+	}
+
+	.bussiness-class-1111 .bussiness-class-1515 {
+		margin-top: 0px !important;
+		padding: 6px 8px !important;
+	}
+
+	.bussiness-class-1111 .bussiness-class-1717 {
+		width: 44px !important;
+		height: 44px !important;
+	}
+
+	.bussiness-class-1111 .bussiness-class-1818 {
+		font-weight: 600 !important;
+		font-size: 12px !important;
+		line-height: 18px !important;
+		letter-spacing: 0.15px !important;
+	}
+
+	/* Style cho phần Ai-class trong màn hình nhỏ */
+	.ai-class-1111 {
+		min-height: 100vh !important;
+	}
+
+	.ai-class-1111 .ai-class-6666 {
+		font-size: 20px !important;
+		line-height: 24px !important;
+	}
+
+	.ai-class-1111 .ai-class-7777 {
+		font-size: 12px !important;
+		line-height: 18px !important;
+	}
+
+	.ai-class-1111 .ai-class-1313 {
+		font-size: 10px !important;
+		line-height: 15px !important;
+		letter-spacing: 0.15px !important;
+
+		font-weight: 400 !important;
+	}
+
+	.ai-class-1111 .ai-class-1212 {
+		font-size: 14px !important;
+		line-height: 18px !important;
+		letter-spacing: 0.15px !important;
+		font-weight: 600 !important;
+	}
+
+	/* Style cho phần features-class trong màn hình nhỏ */
+	.feater-class-1111 {
+		min-height: 100vh !important;
+	}
+
+	.feater-class-1111 .feater-class-4444 .title-line:last-child{
+		margin-left: 100px !important;
+	}
+
+	.feater-class-1111 .feater-class-3333 {
+		gap: 0px !important;
+		margin-bottom: 0px !important;
+	}
+
+	.feater-class-1111 .feater-class-6666 {
+		margin: 10px 0 !important;
+	}
+
+	.feater-class-1111 .feater-class-1212 {
+		font-size: 16px !important;
+		line-height: 24px !important;
+		letter-spacing: 0.15px !important;
+		font-weight: 700 !important;
+	}
+
+	.feater-class-1111 .feater-class-1313 {
+		font-size: 12px !important;
+		line-height: 18px !important;
+		letter-spacing: 0.15px !important;
+		font-weight: 400 !important;
+	}
+
+	/* Style cho phần feater-class trong màn hình nhỏ */
+	.contact-class-1111 {
+		min-height: 100vh !important;
+		padding: 10px 10px !important;
+	}
+
+	.contact-class-1111 .contact-class-3333 {
+		width: 100% !important;
+		min-height: auto !important;
+		padding: 12px !important;
+	}
+
+	.contact-class-1111 .contact-class-3333::before {
+		top: 0px !important;
+		left: 0px !important;
+		right: 0px !important;
+		bottom: 0px !important;
+		border-radius: 16px !important;
+	}
+
+	.contact-class-1111 .contact-class-4444 {
+		padding: 0px !important;
+	}
+
+	.contact-class-1111 .contact-class-5555 {
+		margin-bottom: 0px !important;
+		font-size: 20px !important;
+		line-height: 25px !important;
+	}
+
+	.contact-class-1111 .contact-class-6666 label {
+		padding-left: 0px !important;
+		height: auto !important;
+		margin-bottom: 6px !important;
+	}
+
+	.contact-class-1111 .contact-class-6666 input {
+		font-size: 12px !important;
+		line-height: 18px !important;
+		letter-spacing: 0.15px !important;
+		font-weight: 400 !important;
+		height: auto !important;
+	}
+
+	.contact-class-1111 .contact-class-6666-input select {
+		padding: 8px !important;
+	}
+
+	.contact-class-1111 .contact-class-6666-input option {
+		font-size: 12px !important;
+		line-height: 18px !important;
+		letter-spacing: 0.15px !important;
+		font-weight: 400 !important;
+		height: auto !important;
+	}
+
+	.contact-class-1111 .contact-class-6666 textarea {
+		font-size: 12px !important;
+		line-height: 18px !important;
+		letter-spacing: 0.15px !important;
+		padding: 8px !important;
+	}
+
+	.contact-class-1111 .contact-class-6666-input {
+		margin-bottom: 8px !important;
+	}
+
+	.contact-class-1111 .contact-class-6666-column {
+		margin-top: 8px !important;
+	}
+
+	.contact-class-1111 .contact-class-6666-textarea {
+		margin-top: 8px !important;
+	}
+
+	.contact-class-1111 .text-end {
+		margin-top: 0px !important;
+	}
+}
+
+/* ============================================
+   2. MÀN HÌNH TRONG KHOẢNG 380px ĐẾN 430px
+   ============================================ */
+@media (min-width: 381px) and (max-width: 435px) {
+
+	/* Styles cho màn hình nhỏ (điện thoại vừa) */
+	.hero-container .slide .hero-content {
+		margin-top: 80px !important;
+	}
+
+	.slide .hero-content h1,
+	.hero-content h1 {
+		line-height: 130% !important;
+		font-size: 29px !important;
+	}
+
+	.hero-container .hero-actions {
+		justify-content: center !important;
+		width: 100% !important;
+	}
+
+	.info-container-wrapper {
+		/* padding: 0 12px 24px 12px; */
+		margin-top: 0px !important;
+		position: absolute;
+		bottom: 0% !important;
+		left: auto;
+		right: auto;
+		bottom: auto;
+		z-index: 1;
+		background: transparent;
+	}
+
+	.info-box-content h3 {
+		font-size: 16px !important;
+		line-height: 24px !important;
+		letter-spacing: 0.15px !important;
+		font-weight: 600 !important;
+	}
+
+	.info-box-content p {
+		font-size: 12px !important;
+		line-height: 18px !important;
+		letter-spacing: 0.15px !important;
+		font-weight: 400 !important;
+	}
+
+	.hero-container .container-toggle-parent {
+		bottom: 20% !important;
+		margin-bottom: 31px !important;
+	}
+
+	.hero-container .hero-actions .btn-primary,
+	.hero-container .hero-actions .btn-outline {
+		font-size: clamp(13px, 3.5vw, 16px) !important;
+		padding: 12px clamp(14px, 4vw, 20px) !important;
+		min-width: clamp(140px, 40vw, 180px) !important;
+		max-width: calc(50% - clamp(5px, 1.25vw, 8px)) !important;
+		line-height: clamp(18px, 4.5vw, 24px) !important;
+		letter-spacing: 0.15px !important;
+		border-radius: 100px !important;
+	}
+
+	/* Style cho phần Card trong màn hình rất nhỏ */
+	#content-container.cards {
+		gap: 0.7rem !important;
+	}
+
+	/* Style cho phần content container trong màn hình rất nhỏ */
+	#content-container {
+		padding-top: 80px !important;
+	}
+
+	.image-container {
+		height: 200vh;
+	}
+
+	.image-card {
+		position: relative;
+		flex: 0 0 50vh;
+		/* Mỗi ảnh chiếm 25% */
+		overflow: hidden;
+		transition: flex 0.3s ease;
+		/* Hiệu ứng cho flex */
+		text-align: center;
+		height: 600px;
+		/* Đặt chiều cao cho card */
+	}
+
+	.image-card img {
+		width: 100% !important;
+		height: 100% !important;
+	}
+
+	/* Style Keybad case trong màn hình nhỏ */
+	.kebad-case-1111 {
+		padding-top: 70px !important;
+		padding-bottom: 0px !important;
+	}
+
+	.kebad-case-1111 .kebad-case-2222 {
+		min-height: 100vh !important;
+	}
+
+	.kebad-case-1111 .kebad-case-4444 {
+		line-height: 100% !important;
+		margin-bottom: 16px !important;
+	}
+
+	.kebad-case-1111 .kebad-case-5555 {
+		display: none !important;
+	}
+
+	.kebad-case-1111 .kebad-case-8888 {
+		font-size: 16px !important;
+		line-height: 24px !important;
+		font-weight: 600 !important;
+		padding: 12px 16px !important;
+	}
+
+	.kebad-case-1111 .kebad-case-2222 {
+		gap: 0px !important;
+	}
+
+	.kebad-case-1111 .kebad-case-1414 {
+		padding: 16px 16px !important;
+		gap: 0px !important;
+	}
+
+	.kebad-case-1111 .kebad-case-1616 {
+		margin-bottom: 16px !important;
+	}
+
+	.kebad-case-1111 .kebad-case-2323 {
+		margin-bottom: 8px !important;
+	}
+
+	.kebad-case-1111 .kebad-case-2424 {
+		font-weight: 400 !important;
+		font-size: 12px !important;
+		line-height: 18px !important;
+		letter-spacing: 0.15px !important;
+	}
+
+	.kebad-case-1111 .kebad-case-2223 {
+		margin-bottom: 8px !important;
+	}
+
+	.kebad-case-1111 .kebad-case-2020 {
+		font-weight: 400 !important;
+		font-size: 12px !important;
+		line-height: 18px !important;
+		letter-spacing: 0.15px !important;
+	}
+
+	.kebad-case-1111 .kebad-case-1616 {
+		max-height: 250px !important;
+	}
+
+	#capabilities-tabs .nav-link {
+		font-weight: 600 !important;
+		font-size: 16px !important;
+		line-height: 24px !important;
+		letter-spacing: 0.15px !important;
+		padding: 8px 12px !important;
+	}
+
+	/* Style cho phần business-tabs trong màn hình nhỏ */
+	.bussiness-class-8888 {
+		min-height: 100vh !important;
+		padding: 30px 0px !important;
+	}
+
+	.bussiness-class-1111 .bussiness-class-1616 {
+		width: 40px !important;
+		height: 40px !important;
+	}
+
+	.bussiness-class-1111 .bussiness-class-1212 {
+		/* display: none !important; */
+		margin-top: 0px !important;
+	}
+
+
+	.bussiness-class-1111 .bussiness-class-1313 br{
+		margin-top: 10px !important;
+	}
+
+
+	#business-hero.bussiness-class-1111 {
+		padding: 0px 0px !important;
+	}
+
+	.bussiness-class-1111 .bussiness-class-1212 br{
+		display: none !important;
+	}
+
+	.bussiness-class-1111 .bussiness-class-1414 {
+		gap: 0px !important;
+		margin-top: 0px !important;
+	}
+
+	.bussiness-class-1111 .bussiness-class-1515 {
+		/* margin-top: px !important; */
+		padding: 12px 8px !important;
+	}
+
+	.bussiness-class-1111 .bussiness-class-1717 {
+		width: 44px !important;
+		height: 44px !important;
+	}
+
+	.bussiness-class-1111 .bussiness-class-1818 {
+		font-weight: 600 !important;
+		font-size: 12px !important;
+		line-height: 18px !important;
+		letter-spacing: 0.15px !important;
+	}
+
+	/* Style cho phần Ai-class trong màn hình nhỏ */
+	.ai-class-1111 {
+		min-height: 100vh !important;
+		align-items: center !important;
+	}
+
+	.ai-class-1111 .ai-class-3333 {
+		gap: 16px !important;
+		margin-bottom: 35px !important;
+	}
+
+	.ai-class-1111 .ai-class-8888 {
+		margin-bottom: 45px !important;
+	}
+
+	.ai-class-1111 .ai-class-1313 {
+		font-size: 10px !important;
+		line-height: 15px !important;
+		letter-spacing: 0.15px !important;
+		font-weight: 400 !important;
+	}
+
+	.ai-class-1111 .ai-class-1212 {
+		font-size: 14px !important;
+		line-height: 18px !important;
+		letter-spacing: 0.15px !important;
+		font-weight: 600 !important;
+	}
+
+	/* Style cho phần features-class trong màn hình nhỏ */
+	.feater-class-1111 {
+		min-height: 100vh !important;
+	}
+
+	.feater-class-1111 .feater-class-4444 .title-line:last-child{
+		margin-left: 100px !important;
+	}
+
+	/* .feater-class-1111 .feater-class-3333 {
+		gap: 0px !important;
+		margin-bottom: 0px !important;
+	} */
+
+	/* .feater-class-1111 .feater-class-6666 {
+		margin: 10px 0 !important;
+	} */
+
+	.feater-class-1111 .feater-class-1212 {
+		font-size: 16px !important;
+		line-height: 24px !important;
+		letter-spacing: 0.15px !important;
+		font-weight: 700 !important;
+	}
+
+	.feater-class-1111 .feater-class-1313 {
+		font-size: 12px !important;
+		line-height: 18px !important;
+		letter-spacing: 0.15px !important;
+		font-weight: 400 !important;
+	}
+
+	/* Style cho phần feater-class trong màn hình nhỏ */
+	.contact-class-1111 {
+		min-height: 100vh !important;
+		padding: 10px 10px !important;
+	}
+
+	.contact-class-1111 .contact-class-3333 {
+		width: 100% !important;
+		min-height: auto !important;
+		padding: 60px 15px !important;
+	}
+
+	.contact-class-1111 .contact-class-3333::before {
+		top: 0px !important;
+		left: 0px !important;
+		right: 0px !important;
+		bottom: 0px !important;
+		border-radius: 16px !important;
+	}
+
+	.contact-class-1111 .contact-class-4444 {
+		padding: 0px !important;
+	}
+
+	.contact-class-1111 .contact-class-5555 {
+		margin-bottom: 0px !important;
+		margin-bottom: 20px !important;
+		/* font-size: 20px !important;
+		line-height: 25px !important; */
+	}
+
+	.contact-class-1111 .contact-class-6666 label {
+		padding-left: 0px !important;
+		height: auto !important;
+		margin-bottom: 6px !important;
+	}
+
+	.contact-class-1111 .contact-class-6666 input {
+		font-size: 12px !important;
+		line-height: 18px !important;
+		letter-spacing: 0.15px !important;
+		font-weight: 400 !important;
+		height: auto !important;
+		margin-bottom: 17px !important;
+	}
+
+	.contact-class-1111 .contact-class-6666-input select {
+		padding: 8px !important;
+	}
+
+	.contact-class-1111 .contact-class-6666-input option {
+		font-size: 12px !important;
+		line-height: 18px !important;
+		letter-spacing: 0.15px !important;
+		font-weight: 400 !important;
+		height: auto !important;
+	}
+
+	.contact-class-1111 .contact-class-6666 textarea {
+		font-size: 12px !important;
+		line-height: 18px !important;
+		letter-spacing: 0.15px !important;
+		padding: 8px !important;
+		margin-bottom: 28px !important;
+	}
+
+	.contact-class-1111 .contact-class-6666-input {
+		margin-bottom: 8px !important;
+	}
+
+	.contact-class-1111 .contact-class-6666-column {
+		margin-top: 8px !important;
+	}
+
+	.contact-class-1111 .contact-class-6666-textarea {
+		margin-top: 8px !important;
+	}
+
+	.contact-class-1111 .text-end {
+		margin-top: 0px !important;
+	}
+}
+
+/* ============================================
+   3. MÀN HÌNH TRONG KHOẢNG 430px ĐẾN 780px
+   ============================================ */
+@media (min-width: 436px) and (max-width: 780px) {
+
+	/* Styles cho màn hình trung bình (điện thoại lớn, tablet nhỏ) */
+	.hero-container .slide .hero-content {
+		margin-top: 200px !important;
+	}
+
+	.slide .hero-content h1,
+	.hero-content h1 {
+		line-height: 130% !important;
+		font-size: 29px !important;
+	}
+
+	.hero-container .hero-actions {
+		justify-content: center !important;
+		width: 100% !important;
+	}
+
+	.info-container-wrapper {
+		/* padding: 0 12px 24px 12px; */
+		margin-top: 0px !important;
+		position: absolute;
+		bottom: 0% !important;
+		left: auto;
+		right: auto;
+		bottom: auto;
+		z-index: 1;
+		background: transparent;
+	}
+
+	.info-box-content h3 {
+		font-size: 16px !important;
+		line-height: 24px !important;
+		letter-spacing: 0.15px !important;
+		font-weight: 600 !important;
+	}
+
+	.info-box-content p {
+		font-size: 12px !important;
+		line-height: 18px !important;
+		letter-spacing: 0.15px !important;
+		font-weight: 400 !important;
+	}
+
+	.hero-container .container-toggle-parent {
+		bottom: 20% !important;
+		margin-bottom: 31px !important;
+	}
+
+	.hero-container .hero-actions .btn-primary,
+	.hero-container .hero-actions .btn-outline {
+		font-size: clamp(13px, 3.5vw, 16px) !important;
+		padding: 12px clamp(14px, 4vw, 20px) !important;
+		min-width: clamp(140px, 40vw, 180px) !important;
+		max-width: calc(50% - clamp(5px, 1.25vw, 8px)) !important;
+		line-height: clamp(18px, 4.5vw, 24px) !important;
+		letter-spacing: 0.15px !important;
+		border-radius: 100px !important;
+	}
+
+	/* Style cho phần content container trong màn hình rất nhỏ */
+	#content-container {
+		padding-top: 80px !important;
+	}
+
+	.image-container {
+		height: 200vh;
+	}
+
+	.image-card {
+		position: relative;
+		flex: 0 0 50vh;
+		/* Mỗi ảnh chiếm 25% */
+		overflow: hidden;
+		transition: flex 0.3s ease;
+		/* Hiệu ứng cho flex */
+		text-align: center;
+		height: 600px;
+		/* Đặt chiều cao cho card */
+	}
+
+	.image-card img {
+		width: 100% !important;
+		height: 100% !important;
+	}
+
+	.image-container .image-card .text-hover {
+		display: inline-block !important;
+	}
+
+	/* Style cho phần business-tabs trong màn hình nhỏ */
+	.bussiness-class-8888 {
+		min-height: 100vh !important;
+	}
+
+	/* Style cho phần Ai-class trong màn hình nhỏ */
+	.ai-class-1111 {
+		min-height: 100vh !important;
+		align-items: center !important;
+	}
+
+	.ai-class-1111 .ai-class-3333 {
+		gap: 16px !important;
+		margin-bottom: 35px !important;
+	}
+
+	.ai-class-1111 .ai-class-8888 {
+		margin-bottom: 45px !important;
+	}
+
+	.ai-class-1111 .ai-class-1313 {
+		font-size: 10px !important;
+		line-height: 15px !important;
+		letter-spacing: 0.15px !important;
+		font-weight: 400 !important;
+	}
+
+	.ai-class-1111 .ai-class-1212 {
+		font-size: 14px !important;
+		line-height: 18px !important;
+		letter-spacing: 0.15px !important;
+		font-weight: 600 !important;
+	}
+}
+
+/* ============================================
+   4. MÀN HÌNH LỚN HƠN 780px
+   ============================================ */
+@media (min-width: 781px) and (max-width: 1200px) {
+	/* Styles cho màn hình lớn (tablet lớn, desktop) */
+
+}
+
+/* ============================================
+   3. MÀN HÌNH TRONG KHOẢNG 430px ĐẾN 780px
+   ============================================ */
+@media (min-width: 1200px) and (max-width: 1600px) {
+	/* Styles cho phần màn hình header trong màn hình lattop */
+	header .container {
+		width: 85% !important;
+	}
+	
+	.hero .hero-content {
+		max-width: 85% !important;
+	}
+	
+	.hero h1 {
+		font-size: 41px !important;
+		line-height: 53px !important;
+		max-width: 60% !important;
+	}
+	
+	.hero .hero-content p {
+		font-size: 15px !important;
+		line-height: 26px !important;
+		max-width: 50% !important;
+	}
+	
+	.hero .hero-actions a {
+		font-size: 12px !important;
+		line-height: 14px !important;
+		padding: 10px 15px !important;
+	}
+	
+	.hero .container-toggle-parent .container-toggle {
+		max-width: 85% !important;
+	}
+	
+	.hero .container-toggle-parent {
+		margin-bottom: 10px !important;
+	}
+	
+	.hero .container-toggle-parent .tab {
+		height: 4px !important;
+		width: 48px !important;
+	}
+	
+	.info-container-wrapper .info-box-content h3 {
+		font-size: 17px !important;
+		line-height: 20px !important;
+	}
+	
+	.info-container-wrapper .info-box-content p {
+		font-size: 13px !important;
+		line-height: 22px !important;
+	}
+	
+	.info-container-wrapper .info-container {
+		width: 98% !important;
+	}
+	
+	/* Style cho phần content container trong màn hình lattop */
+	#content-container {
+		padding: 30px 7% !important;
+	}
+	
+	#content-container .text_title1 {
+		font-size: 30px !important;
+		line-height: 36px !important;
+		padding: 8px 25% !important;
+	}
+	
+	#content-container .text_title2 {
+		font-size: 14px !important;
+		line-height: 18px !important;
+		width: 55% !important;
+	}
+	
+	#content-container .cards {
+		margin-top: 35px !important;
+	}
+	
+	#content-container .cards .card {
+		width: 250px !important;
+		height: 250px !important;
+	}
+	
+	#content-container .cards .card .content {
+		padding: 0px !important;
+	}
+	
+	#content-container .cards .card .content .text-top {
+		font-size: 50px !important;
+		line-height: 40px !important;
+	}
+	
+	#content-container .cards .card .content .text-bot {
+		font-size: 14px !important;
+		line-height: 20px !important;
+	}
+	
+	#content-container .cards .card .logo_h {
+		width: 9rem !important;
+		height: 9rem !important;
+		right: 5% !important;
+		bottom: 5% !important;
+	}
+	
+	/* Style cho Keybad-case trong màn hình lattop */
+	.kebad-case-1111 {
+		padding-top: 2rem !important;
+		padding-bottom: 0px !important;
+	}
+	
+	.kebad-case-1111 .kebad-case-2222 {
+		padding: 0px 0px !important;
+		max-width: 85% !important;
+		min-height: 100vh !important;
+	}
+	
+	.kebad-case-1111 .kebad-case-4444 {
+		font-size: 30px !important;
+		line-height: 36px !important;
+	}
+	
+	.kebad-case-1111 .kebad-case-5555 {
+		font-size: 14px !important;
+		line-height: 20px !important;
+	}
+	
+	.kebad-case-1111 .kebad-case-6666 .kebad-case-8888 {
+		font-size: 13px !important;
+		line-height: 18px !important;
+		padding: 10px 14px !important;
+	}
+	
+	.kebad-case-1111 .kebad-case-6666 .kebad-case-8888 img {
+		width: 20px !important;
+		height: 20px !important;
+	}
+	
+	.kebad-case-1111 .kebad-case-6666 .kebad-case-9999 {
+		font-size: 13px !important;
+		line-height: 18px !important;
+		padding: 10px 14px !important;
+	}
+	
+	.kebad-case-1111 .kebad-case-6666 .kebad-case-9999 img {
+		width: 20px !important;
+		height: 20px !important;
+	}
+	
+	.kebad-case-1111 .kebad-case-1212 {
+		padding: 10px 0px !important;
+		gap: 20px !important;
+		max-width: 85% !important;
+	}
+	
+	.kebad-case-1111 .kebad-case-1414 {
+		padding: 0px 0px !important;
+		gap: 20px !important;
+		/* max-width: 85% !important; */
+	}
+	
+	.kebad-case-1111 .kebad-case-1616 {
+		max-width: 100% !important;
+		height: 400px !important;
+	}
+	
+	.kebad-case-1111 .kebad-case-1717 {
+		height: 400px !important;
+		width: 100% !important;
+	}
+	
+	.kebad-case-1111 .kebad-case-2020 {
+		font-size: 14px !important;
+		line-height: 22px !important;
+	}
+	
+	.kebad-case-1111 .kebad-case-2121 {
+		height: 400px !important;
+	}
+	
+	.kebad-case-1111 .kebad-case-2223 {
+		font-size: 25px !important;
+		line-height: 28px !important;
+	}
+	
+	.kebad-case-1111 .kebad-case-2323 {
+		width: 100% !important;
+		height: auto !important;
+	}
+	
+	.kebad-case-1111 .kebad-case-2424 {
+		font-size: 14px !important;
+		line-height: 20px !important;
+	}
+	
+	/* Style cho Business-class trong màn hình lattop */
+	.bussiness-class-1111 .bussiness-class-8888 {
+		top: 0px !important;
+	}
+	
+	.bussiness-class-1111 .bussiness-class-9999 img {
+		width: 200px !important;
+	}
+	
+	.bussiness-class-1111 .bussiness-class-9999 {
+		margin-bottom: 0px !important;
+	}
+	
+	.bussiness-class-1111 .bussiness-class-1112 {
+		gap: 0px !important;
+		min-height: 120px !important;
+	}
+	
+	.bussiness-class-1111 .bussiness-class-1212 {
+		font-size: 30px !important;
+		line-height: 37px !important;
+		margin-top: -50px !important;
+	}
+	
+	.bussiness-class-1111 .bussiness-class-1414 {
+		gap: 0px !important;
+		margin-top: 0px !important;
+	}
+	
+	.bussiness-class-1111 .bussiness-class-1515 {
+		min-height: auto !important;
+	}
+	
+	.bussiness-class-1111 .bussiness-class-1616 {
+		width: 60px !important;
+		height: 60px !important;
+	}
+	
+	.bussiness-class-1111 .bussiness-class-1717 {
+		width: 42px !important;
+		height: 42px !important;
+	}
+	
+	.bussiness-class-1111 .bussiness-class-1717 {
+		line-height: 20px !important;
+		font-size: 14px !important;
+	}
+	
+	.bussiness-class-1111 .bussiness-class-2020 {
+		width: auto !important;
+		height: auto !important;
+		font-size: 14px !important;
+		line-height: 20px !important;
+		padding: 10px 24px !important;
+	}
+	
+	/* Style cho Ai-class trong màn hình lattop */
+	.ai-class-1111 {
+		min-height: 100vh !important;
+		align-items: center !important;
+	}
+	
+	.ai-class-1111 .ai-class-2222 {
+		padding: 0px 0px !important;
+		max-width: 85% !important;
+	}
+	
+	.ai-class-1111 .ai-class-3333 {
+		gap: 10px !important;
+		margin-bottom: 10px !important;
+	}
+	
+	.ai-class-1111 .ai-class-3333 .ai-class-4444 img {
+		width: 80px !important;
+		height: 80px !important;
+	}
+	
+	.ai-class-1111 .ai-class-6666 {
+		font-size: 30px !important;
+		line-height: 37px !important;
+		max-width: 70% !important;
+	}
+	
+	.ai-class-1111 .ai-class-7777 {
+		font-size: 16px !important;
+		line-height: 24px !important;
+		max-width: 70% !important;
+	}
+	
+	.ai-class-1111 .ai-class-9999 {
+		height: 175px !important;
+	}
+	
+	.ai-class-1111 .ai-class-1212 {
+		font-size: 16px !important;
+		line-height: 24px !important;
+		border-bottom: none !important;
+	}
+	
+	.ai-class-1111 .ai-class-1313 {
+		font-size: 12px !important;
+		line-height: 16px !important;
+	}
+	
+	.ai-class-1111 .ai-class-1515 {
+		width: auto !important;
+		height: auto !important;
+		padding: 8px 24px !important;
+		font-size: 14px !important;
+		line-height: 24px !important;
+	}
+	
+	/* Style cho Features-class trong màn hình lattop */
+	.feater-class-1111 {
+		min-height: 100vh !important;
+		padding: 0px 0px !important;
+	}
+	
+	.feater-class-1111 .feater-class-2222 {
+		padding: 30px 0px !important;
+		max-width: 85% !important;
+	}
+	
+	.feater-class-1111 .feater-class-4444 {
+		font-size: 48px !important;
+		line-height: 42px !important;
+	}
+	
+	.feater-class-1111 .feater-class-4444 .title-line:last-child{
+		margin-left: 140px !important;
+	}
+	
+	.feater-class-1111 .feater-class-5555 {
+		font-size: 18px !important;
+		line-height: 32px !important;
+		max-width: 100% !important;
+	}
+	
+	.feater-class-1111 .feater-class-1313 {
+		font-size: 12px !important;
+		line-height: 22px !important;
+	}
+	
+	.feater-class-1111 .feater-class-1212 {
+		font-size: 20px !important;
+		line-height: 32px !important;
+	}
+	
+	.feater-class-1111 .feater-class-1112 {
+		width: 40px !important;
+		height: 40px !important;
+		padding-left: 0px !important;
+	}
+	
+	/* Style cho Contact-class trong màn hình lattop */
+	.contact-class-1111 {
+		min-height: 100vh !important;
+		padding: 30px 0px !important;
+	}
+	
+	.contact-class-1111 .contact-class-2222 {
+		padding: 0px 0px !important;
+		max-width: 85% !important;
+		height: auto !important;
+	}
+	
+	.contact-class-1111 .contact-card-wrapper {
+		padding: 0px 0px !important;
+		width: 100% !important;
+	}
+	
+	.contact-class-1111 .contact-card-wrapper .contact-class-3333 {
+		/* padding: 0px 0px !important; */
+		width: 100% !important;
+		padding: 50px 55px !important;
+		min-height: auto !important;
+	}
+	
+	.contact-class-1111 .contact-card-wrapper .contact-class-3333::before {
+		top: 20px !important;
+		left: 20px !important;
+		right: 20px !important;
+		bottom: 20px !important;
+		border-radius: 20px !important;
+	}
+	
+	.contact-class-1111 .contact-class-5555 {
+		width: 100% !important;
+		height: auto !important;
+		font-size: 32px !important;
+		line-height: 40px !important;
+		margin-bottom: 20px !important;
+	}
+	
+	.contact-class-1111 .contact-class-6666 .form-label {
+		font-size: 14px !important;
+		line-height: 22px !important;
+		margin-bottom: 6px !important;
+		padding-left: 0px !important;
+	}
+	
+	.contact-class-1111 .contact-class-6666-input { 
+		margin-bottom: 8px !important; 
+	}
+	
+	.contact-class-1111 .contact-class-6666 input {
+		height: auto !important;
+		font-size: 12px !important;
+		line-height: 20px !important;
+		padding: 8px 12px !important;
+	}
+	
+	.contact-class-1111 .contact-class-6666 select {
+		height: auto !important;
+		font-size: 12px !important;
+		line-height: 20px !important;
+		padding: 8px 12px !important;
+	}
+	
+	.contact-class-1111 .contact-class-6666-textarea .form-label {
+		padding-left: 16px !important;
+	}
+	
+	.contact-class-1111 .text-end {
+		margin-top: 10px !important;
+	}
+	
+	.contact-class-1111 .contact-class-7777 {
+		width: auto !important;
+		height: auto !important;
+		padding: 8px 24px !important;
+		font-size: 14px !important;
+		line-height: 24px !important;
+	}
+	
+	/* Style cho footer-class trong màn hình lattop */
+	.container-footer {
+		padding: 30px 0px !important;
+		max-width: 85% !important;
+	}
+	
+	.container-footer .brand-logo {
+		height: 40px !important;
+	}
+	
+	.container-footer .footer-slogan {
+		font-size: 14px !important;
+		line-height: 20px !important;
+	}
+	
+	.container-footer .footer-left-columns h3 {
+		font-size: 16px !important;
+		line-height: 24px !important;
+		margin-bottom: 16px !important;
+	}
+	
+	.container-footer .footer-column a {
+		font-size: 13px !important;
+		line-height: 24px !important;
+	}
+	
+	.container-footer .footer-column .contact-table th {
+		font-size: 13px !important;
+		line-height: 24px !important;
+	}
+	
+	.container-footer .footer-column .contact-table td {
+		font-size: 13px !important;
+		line-height: 20px !important;
+	}
+	
+	.container-footer .footer-bottom .copyright {
+		font-size: 14px !important;
+		line-height: 20px !important;
+	}
+	
+	.container-footer .footer-bottom .partnership-link {
+		font-size: 14px !important;
+		line-height: 20px !important;
+	}
+	
+	.container-footer .footer-bottom .partnership-link img {
+		height: 20px !important;
+	}
+	
+	.container-footer .footer-right .email-subscription .form-label {
+		font-size: 12px !important;
+		line-height: 18px !important;
+	}
+	
+	.container-footer .footer-right .email-input-group {
+		margin-bottom: 14px !important;
+		line-height: 24px !important;
+	}
+	
+	.container-footer .footer-right .email-input-group .email-btn {
+		margin-bottom: 14px !important;
+		line-height: 24px !important;
+		padding: 8px 28px !important;
+	}
+	
+	.container-footer .footer-right .social-section h4 {
+		font-size: 13px !important;
+		line-height: 20px !important;
+	}
+	
+	.container-footer .footer-right .social-icons .social-icon {
+		width: 20px !important;
+		height: 20px !important;
+	}
+	
+	.container-footer .footer-right .social-icons .social-icon .brand-logo {
+		width: 16px !important;
+		height: 16px !important;
+	}
+}
+
+
+/* ============================================
+   COMBINED MEDIA QUERIES (Tùy chọn)
+   ============================================ */
+
+/* Màn hình nhỏ và vừa (<= 430px) */
+@media (max-width: 430px) {}
+
+/* Màn hình từ nhỏ đến trung bình (<= 780px) */
+@media (max-width: 780px) {}
+
+/* Màn hình từ trung bình trở lên (>= 431px) */
+@media (min-width: 431px) {}

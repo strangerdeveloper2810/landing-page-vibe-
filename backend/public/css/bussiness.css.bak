@@ -1,0 +1,681 @@
+/* Business Hero Section Styles */
+.bussiness-class-1111 {
+    position: relative;
+    overflow: hidden;
+    background: var(--White, rgba(255, 255, 255, 1));
+    width: 100%;
+    margin: 0;
+    padding: 72px 0 96px;
+    min-height: 100vh;
+}
+
+@media (max-width: 768px) {
+    .bussiness-class-1111 {
+        padding: 40px 0 60px;
+        min-height: auto;
+    }
+}
+
+/* Auto-align helpers for hero decorative icons */
+:root {
+    --business-container-max: 1140px;
+}
+
+@media (max-width: 1200px) {
+    :root {
+        --business-container-max: 960px;
+    }
+}
+
+@media (max-width: 992px) {
+    :root {
+        --business-container-max: 720px;
+    }
+}
+
+@media (max-width: 768px) {
+    :root {
+        --business-container-max: 540px;
+    }
+}
+
+@keyframes wavePulse {
+    0% {
+        transform: scale(0.98);
+        opacity: 0.22;
+    }
+    50% {
+        transform: scale(1.03);
+        opacity: 0.34;
+    }
+    100% {
+        transform: scale(0.98);
+        opacity: 0.22;
+    }
+}
+
+/* Base icon container without hard edges */
+#business-hero .icon-base {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    z-index: 0;
+    opacity: 1;
+    --rot: 0deg;
+    will-change: transform;
+}
+
+#business-hero .icon-base img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+#business-hero .icon-base::before {
+    content: '';
+    position: absolute;
+    inset: -28px;
+    border-radius: 24px;
+    background: radial-gradient(60% 60% at 50% 50%, rgba(255, 255, 255, 0.95) 0%, rgba(189, 230, 242, 0.65) 35%, rgba(189, 230, 242, 0.25) 60%, rgba(189, 230, 242, 0) 100%);
+    filter: blur(12px);
+    pointer-events: none;
+    z-index: -1;
+}
+
+/* Soft animated light waves */
+#business-hero .icon-base::after {
+    content: '';
+    position: absolute;
+    inset: -60px;
+    border-radius: 50%;
+    background: radial-gradient(70% 70% at 50% 50%, rgba(255, 255, 255, 0.35) 0%, rgba(160, 214, 232, 0.18) 40%, rgba(160, 214, 232, 0) 70%);
+    filter: blur(22px);
+    pointer-events: none;
+    z-index: -2;
+    animation: wavePulse 6.5s ease-in-out infinite;
+}
+
+#business-hero .icon-checked::after {
+    animation-delay: 1.2s;
+}
+
+#business-hero .icon-idea {
+    top: 53px;
+    left: 131px;
+    --rot: 10deg;
+}
+
+#business-hero .icon-checked {
+    top: 255px;
+    left: 87px;
+    --rot: -10deg;
+}
+
+/* Right-side icons */
+#business-hero .icon-calendar {
+    top: 56px;
+    right: 131px;
+    --rot: -10deg;
+}
+
+#business-hero .icon-folder {
+    top: 225px;
+    right: 87px;
+    --rot: 10deg;
+}
+
+#business-hero .icon-calendar img,
+#business-hero .icon-folder img {
+    box-shadow: none;
+    border-radius: 24px;
+    background: transparent;
+}
+
+/* remove glow layers for these two to avoid any halo/viền */
+#business-hero .icon-calendar::before,
+#business-hero .icon-calendar::after,
+#business-hero .icon-folder::before,
+#business-hero .icon-folder::after {
+    content: none;
+}
+
+@media (max-width: 768px) {
+    #business-hero .icon-base {
+        width: 80px;
+        height: 80px;
+    }
+
+    #business-hero .icon-base::before {
+        inset: -22px;
+        filter: blur(10px);
+    }
+
+    #business-hero .icon-base::after {
+        inset: -46px;
+        filter: blur(18px);
+        animation-duration: 7.2s;
+    }
+
+    #business-hero .icon-idea {
+        top: 48px;
+        left: 32px;
+        --rot: 10deg;
+    }
+
+    #business-hero .icon-checked {
+        top: 188px;
+        left: 12px;
+        --rot: -10deg;
+    }
+
+    #business-hero .icon-calendar {
+        right: 24px;
+        top: 40px;
+    }
+
+    #business-hero .icon-folder {
+        right: 16px;
+        top: 190px;
+    }
+}
+
+/* Chaotic but gentle floating animations for 4 icons */
+@keyframes floatChaos1 {
+    0% {
+        transform: translate(0px, 0px) rotate(var(--rot));
+    }
+    20% {
+        transform: translate(18px, -14px) rotate(calc(var(--rot) + 2deg));
+    }
+    40% {
+        transform: translate(-16px, 18px) rotate(calc(var(--rot) - 2deg));
+    }
+    60% {
+        transform: translate(22px, 12px) rotate(calc(var(--rot) + 3deg));
+    }
+    80% {
+        transform: translate(-14px, -20px) rotate(calc(var(--rot) - 2deg));
+    }
+    100% {
+        transform: translate(0px, 0px) rotate(var(--rot));
+    }
+}
+
+@keyframes floatChaos2 {
+    0% {
+        transform: translate(0px, 0px) rotate(var(--rot));
+    }
+    25% {
+        transform: translate(-22px, 12px) rotate(calc(var(--rot) - 3deg));
+    }
+    50% {
+        transform: translate(18px, -20px) rotate(calc(var(--rot) + 2deg));
+    }
+    75% {
+        transform: translate(-14px, 22px) rotate(calc(var(--rot) + 3deg));
+    }
+    100% {
+        transform: translate(0px, 0px) rotate(var(--rot));
+    }
+}
+
+@keyframes floatChaos3 {
+    0% {
+        transform: translate(0px, 0px) rotate(var(--rot));
+    }
+    15% {
+        transform: translate(18px, 18px) rotate(calc(var(--rot) + 2deg));
+    }
+    35% {
+        transform: translate(-22px, -14px) rotate(calc(var(--rot) - 3deg));
+    }
+    65% {
+        transform: translate(24px, -18px) rotate(calc(var(--rot) + 2deg));
+    }
+    90% {
+        transform: translate(-18px, 22px) rotate(calc(var(--rot) - 2deg));
+    }
+    100% {
+        transform: translate(0px, 0px) rotate(var(--rot));
+    }
+}
+
+@keyframes floatChaos4 {
+    0% {
+        transform: translate(0px, 0px) rotate(var(--rot));
+    }
+    22% {
+        transform: translate(22px, -22px) rotate(calc(var(--rot) + 3deg));
+    }
+    44% {
+        transform: translate(-24px, 12px) rotate(calc(var(--rot) - 2deg));
+    }
+    66% {
+        transform: translate(18px, 24px) rotate(calc(var(--rot) + 2deg));
+    }
+    88% {
+        transform: translate(-14px, -18px) rotate(calc(var(--rot) - 2deg));
+    }
+    100% {
+        transform: translate(0px, 0px) rotate(var(--rot));
+    }
+}
+
+#business-hero .icon-idea {
+    animation: floatChaos1 6.6s ease-in-out infinite alternate;
+}
+
+#business-hero .icon-checked {
+    animation: floatChaos2 7.1s ease-in-out 0.4s infinite alternate;
+}
+
+#business-hero .icon-calendar {
+    animation: floatChaos3 6.8s ease-in-out 0.2s infinite alternate;
+}
+
+#business-hero .icon-folder {
+    animation: floatChaos4 7.4s ease-in-out 0.7s infinite alternate;
+}
+
+.business-container-box {
+    background: none;
+}
+
+/* Subtle side glows */
+.bussiness-class-2222 {
+    position: absolute;
+    top: -140px;
+    left: -220px;
+    width: 900px;
+    height: 720px;
+    z-index: 0;
+    background: radial-gradient(70% 70% at 30% 25%, rgba(72, 202, 215, 0.22) 0%, rgba(72, 202, 215, 0.16) 35%, rgba(72, 202, 215, 0.08) 58%, rgba(72, 202, 215, 0.0) 80%);
+    filter: blur(26px);
+    pointer-events: none;
+    border-radius: 32px;
+}
+
+.bussiness-class-3333 {
+    position: absolute;
+    top: -80px;
+    right: -160px;
+    width: 820px;
+    height: 640px;
+    z-index: 0;
+    background: radial-gradient(68% 68% at 70% 30%, rgba(237, 112, 183, 0.18) 0%, rgba(237, 112, 183, 0.10) 40%, rgba(237, 112, 183, 0.0) 75%);
+    filter: blur(24px);
+    pointer-events: none;
+    border-radius: 32px;
+}
+
+@media (max-width: 768px) {
+    .bussiness-class-2222 {
+        width: 400px;
+        height: 400px;
+        top: -100px;
+        left: -150px;
+        filter: blur(20px);
+    }
+
+    .bussiness-class-3333 {
+        width: 350px;
+        height: 350px;
+        top: -60px;
+        right: -100px;
+        filter: blur(18px);
+    }
+}
+
+/* Soft sun rays container */
+.bussiness-class-4444 {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.bussiness-class-5555 {
+    position: absolute;
+    top: -82px;
+    left: -142px;
+    width: 38px;
+    height: 760px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.55) 0%, rgba(255, 255, 255, 0.0) 100%);
+    transform: rotate(47.73deg);
+    opacity: 0.35;
+    backdrop-filter: blur(24px);
+    mix-blend-mode: screen;
+}
+
+.bussiness-class-6666 {
+    position: absolute;
+    top: -98px;
+    left: -176px;
+    width: 30px;
+    height: 760px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.0) 100%);
+    transform: rotate(47.73deg);
+    opacity: 0.28;
+    backdrop-filter: blur(22px);
+    mix-blend-mode: screen;
+}
+
+.bussiness-class-7777 {
+    position: absolute;
+    top: -66px;
+    left: -108px;
+    width: 26px;
+    height: 760px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.45) 0%, rgba(255, 255, 255, 0.0) 100%);
+    transform: rotate(47.73deg);
+    opacity: 0.24;
+    backdrop-filter: blur(20px);
+    mix-blend-mode: screen;
+}
+
+@media (max-width: 768px) {
+    .bussiness-class-5555,
+    .bussiness-class-6666,
+    .bussiness-class-7777 {
+        display: none;
+    }
+}
+
+/* Container box */
+.bussiness-class-8888 {
+    position: relative;
+    height: auto;
+    top: 0;
+    left: 0;
+    transform: none;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+@media (min-width: 992px) {
+    .bussiness-class-8888 {
+        position: absolute;
+        top: 43px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 0;
+    }
+}
+
+.bussiness-class-9999 {
+    margin-bottom: 28px;
+}
+
+@media (max-width: 768px) {
+    .bussiness-class-9999 {
+        margin-bottom: 20px;
+    }
+}
+
+.bussiness-class-1010 {
+    width: 300px;
+    height: auto;
+    object-fit: contain;
+}
+
+@media (max-width: 768px) {
+    .bussiness-class-1010 {
+        width: 200px;
+    }
+}
+
+.bussiness-class-1112 {
+    width: 100%;
+    max-width: 933px;
+    height: auto;
+    min-height: 164px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .bussiness-class-1112 {
+        width: 100%;
+        min-height: auto;
+        gap: 8px;
+    }
+}
+
+.bussiness-class-1212 {
+    width: 100%;
+    max-width: 878px;
+    height: auto;
+    min-height: 104px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 52px;
+    letter-spacing: 0px;
+    text-align: center;
+    vertical-align: middle;
+    color: rgba(7, 20, 32, 1);
+    margin: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .bussiness-class-1212 {
+        font-size: 24px;
+        line-height: 32px;
+        min-height: auto;
+        width: 100%;
+    }
+}
+
+.bussiness-class-1313 {
+    width: 100%;
+    max-width: 769px;
+    height: auto;
+    min-height: 48px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    text-align: center;
+    color: var(--Neutral-Gray-8, rgba(63, 63, 70, 1));
+    margin: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .bussiness-class-1313 {
+        font-size: 14px;
+        line-height: 20px;
+        min-height: auto;
+        width: 100%;
+    }
+}
+
+.bussiness-class-1414 {
+    margin-top: 8px;
+    width: 100%;
+    max-width: 933px;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    justify-items: center;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Override Bootstrap row negative margins */
+.bussiness-class-1414.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+@media (min-width: 992px) {
+    .bussiness-class-1414 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .bussiness-class-1414 {
+        gap: 12px;
+        margin-top: 16px;
+    }
+}
+
+.bussiness-class-1515 {
+    width: 100%;
+    max-width: 300.3333435058594px;
+    height: auto;
+    min-height: 172px;
+    padding: 12px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Override Bootstrap column classes when using CSS Grid */
+.bussiness-class-1414 > .bussiness-class-1515 {
+    flex: none;
+    max-width: 100%;
+}
+
+@media (max-width: 768px) {
+    .bussiness-class-1515 {
+        padding: 12px 8px;
+        min-height: auto;
+    }
+}
+
+.bussiness-class-1616 {
+    width: 88px;
+    height: 88px;
+    padding: 12px;
+    border-radius: 16px;
+    border: 2px solid rgba(255, 255, 255, 1);
+    background: linear-gradient(180deg, #E6FDFF 0%, #FDEDFF 100%);
+    box-shadow: 0px -4px 0px 0px rgba(81, 0, 118, 0.08) inset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+@media (max-width: 768px) {
+    .bussiness-class-1616 {
+        width: 72px;
+        height: 72px;
+        padding: 10px;
+    }
+}
+
+.bussiness-class-1717 {
+    width: 56px;
+    height: 56px;
+}
+
+@media (max-width: 768px) {
+    .bussiness-class-1717 {
+        width: 48px;
+        height: 48px;
+    }
+}
+
+.bussiness-class-1818 {
+    width: 100%;
+    max-width: 252.33334350585938px;
+    height: auto;
+    min-height: 48px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.15px;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: var(--Black, rgba(0, 0, 0, 1));
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .bussiness-class-1818 {
+        font-size: 14px;
+        line-height: 20px;
+        min-height: auto;
+    }
+}
+
+.bussiness-class-1919 {
+    margin-top: 28px;
+}
+
+@media (max-width: 768px) {
+    .bussiness-class-1919 {
+        margin-top: 24px;
+    }
+}
+
+.bussiness-class-2020 {
+    width: 220px;
+    height: 48px;
+    padding: 12px 24px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border-radius: 100px;
+    background: linear-gradient(268.03deg, #0057F2 0%, #1E88E5 100%);
+    border: none;
+    color: #FFFFFF;
+    box-shadow: 0px -7px 24px 0px rgba(255, 255, 255, 0.5) inset, 0px 3px 12px 0px rgba(0, 87, 242, 0.5);
+    text-decoration: none;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .bussiness-class-2020 {
+        width: 343px;
+        height: 44px;
+        padding-top: 12px;
+        padding-right: 24px;
+        padding-bottom: 12px;
+        padding-left: 24px;
+        border-radius: 100px;
+        gap: 8px;
+        opacity: 1;
+        background: linear-gradient(268.03deg, #0057F2 0%, #1E88E5 100%);
+        box-shadow: 0px -7px 24px 0px rgba(255, 255, 255, 0.5) inset, 0px 3px 12px 0px rgba(0, 87, 242, 0.5);
+        font-family: 'Be Vietnam Pro', sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.15px;
+        text-align: center;
+        vertical-align: middle;
+        color: #FFFFFF;
+    }
+}
+
+.bussiness-class-2121 {
+    width: 18px;
+    height: 18px;
+}
+

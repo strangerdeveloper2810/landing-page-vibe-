@@ -1,0 +1,14 @@
+# Ignore Git
+.git
+.gitignore
+
+# Ignore logs
+logs/
+*.log
+
+# Ignore MySQL data
+mysql/data/
+
+# Ignore temp files
+*.tmp
+*.swp

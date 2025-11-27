@@ -1,0 +1,153 @@
+/* Font Size Fixes - Bug #2, #9, #14 */
+/* Layout Fixes - Bug #8, #10, #15 */
+
+/* Bug #2 & #14: First page font sizes - make titles and content more readable */
+.hero h1 {
+    font-size: clamp(28px, 5vw, 56px) !important;
+    line-height: 1.2 !important;
+}
+
+.hero p {
+    font-size: clamp(16px, 2vw, 20px) !important;
+    line-height: 1.6 !important;
+}
+
+/* Bug #9: Content section - increase text size, reduce wasted space */
+#content-container .text_title1 {
+    font-size: clamp(36px, 4vw, 48px) !important;
+    line-height: 1.3 !important;
+    margin-bottom: 20px !important;
+}
+
+#content-container .text_title2 {
+    font-size: clamp(18px, 2vw, 22px) !important;
+    line-height: 1.6 !important;
+    margin-bottom: 40px !important;
+}
+
+/* Bug #10: Increase spacing between title and content */
+#content-container .text_title1 + .text_title2 {
+    margin-top: 24px !important;
+}
+
+/* Bug #14: Feater section font sizes */
+.feater-class-4444 {
+    font-size: clamp(48px, 6vw, 72px) !important;
+}
+
+.feater-class-5555 {
+    font-size: clamp(16px, 2vw, 20px) !important;
+    line-height: 1.7 !important;
+}
+
+.feater-class-1212 {
+    font-size: clamp(20px, 2.5vw, 28px) !important;
+}
+
+.feater-class-1313 {
+    font-size: clamp(16px, 1.8vw, 18px) !important;
+    line-height: 1.6 !important;
+}
+
+/* Bug #13: Button font sizes consistency */
+.btn, .hero-actions .btn {
+    font-size: 16px !important;
+}
+
+@media (max-width: 768px) {
+    .btn, .hero-actions .btn {
+        font-size: 14px !important;
+    }
+}
+
+/* Bug #16: Footer slogan - increase font size */
+.footer-slogan {
+    font-size: 18px !important;
+    line-height: 28px !important;
+}
+
+/* Bug #17: Partnership link - consistent font sizes */
+.partnership-link {
+    font-size: 18px !important;
+}
+
+.partnership-link strong {
+    font-size: 18px !important;
+}
+
+/* Bug #18: Email subscription labels */
+.email-subscription .form-label {
+    font-size: 16px !important;
+}
+
+.email-input::placeholder {
+    font-size: 14px !important;
+}
+
+/* Bug #19: Social section - increase text and icon size */
+.social-section h4 {
+    font-size: 18px !important;
+}
+
+.social-icon {
+    width: 40px !important;
+    height: 40px !important;
+}
+
+.social-icon img {
+    width: 40px !important;
+    height: 40px !important;
+}
+
+/* Bug #8: Content section layout centering - better vertical alignment */
+#content-container {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    padding: 60px 40px !important;
+}
+
+@media (max-width: 768px) {
+    #content-container {
+        padding: 40px 20px !important;
+    }
+}
+
+/* Bug #15: Feater section - reduce empty space */
+.feater-class-2222 {
+    padding: 60px 40px !important;
+}
+
+@media (max-width: 768px) {
+    .feater-class-2222 {
+        padding: 40px 20px !important;
+    }
+}
+
+/* Bug #7, #11, #12: Color consistency - apply main gradient theme */
+:root {
+    --main-gradient: linear-gradient(268.03deg, #0057F2 0%, #1E88E5 100%);
+    --main-blue: #0057F2;
+    --accent-blue: #1E88E5;
+}
+
+/* Bug #11: Cards consistent with main color theme */
+.card {
+    border: 1px solid rgba(0, 87, 242, 0.2) !important;
+}
+
+.card:hover {
+    border-color: var(--main-blue) !important;
+    box-shadow: 0 8px 24px rgba(0, 87, 242, 0.25) !important;
+}
+
+/* Bug #12: Logos in cards - apply theme color filter */
+.card .logo_h {
+    filter: hue-rotate(0deg) saturate(1.2) !important;
+}
+
+/* Ensure all major interactive elements use consistent colors */
+a, button {
+    transition: color 0.3s ease, background 0.3s ease !important;
+}

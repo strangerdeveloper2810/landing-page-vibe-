@@ -1,0 +1,512 @@
+/* AI Section Styles */
+.ai-class-1111 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 0;
+    background: #FFFFFF;
+    overflow: visible;
+}
+
+.ai-class-2222 {
+    width: 100%;
+    /* max-width: 1440px; */
+    min-height: auto;
+    /* gap: 24px; */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 16px;
+    padding-left: 16px;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    overflow: visible;
+    position: relative;
+}
+
+/* Header Section */
+.ai-class-3333 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    max-width: 100%;
+    margin-bottom: 20px;
+    margin-top: 0;
+    width: 100%;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.ai-class-4444 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+    margin-top: 0;
+    flex-shrink: 0;
+}
+
+.ai-class-5555 {
+    width: 60px;
+    height: 60px;
+    display: block;
+    opacity: 1;
+}
+
+.ai-class-6666 {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0px;
+    color: #000000;
+    margin: 0;
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+    max-width: 932px;
+    min-height: auto;
+    flex-shrink: 0;
+    visibility: visible;
+    opacity: 1;
+    position: relative;
+    z-index: 2;
+}
+
+.ai-class-7777 {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #333333;
+    margin: 0;
+    text-align: center;
+    max-width: 100%;
+    padding: 0 8px;
+    flex-shrink: 0;
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Services Grid */
+.ai-class-8888 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    width: 100%;
+    max-width: 1280px;
+    margin-bottom: 24px;
+    margin-top: 0;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 3;
+}
+
+.ai-class-9999 {
+    width: 100%;
+    height: 160px;
+    gap: 10px;
+    opacity: 1;
+    background-color: transparent;
+    /* border-radius: 12px; */
+    overflow: hidden;
+    display: block;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 3;
+    border: none;
+}
+
+.ai-class-9999:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(0, 87, 242, 0.3);
+}
+
+.ai-class-1010 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    border: none;
+}
+
+.ai-class-1112 {
+    padding: 10px 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    overflow: hidden;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.4) 50%, transparent 100%);
+}
+
+.ai-class-1212 {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.15px;
+    vertical-align: middle;
+    color: #FFFFFF;
+    box-shadow: -1px 1px 1px 0px rgba(0, 0, 0, 0.5);
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.ai-class-1313 {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 11px;
+    line-height: 16px;
+    letter-spacing: 0.15px;
+    vertical-align: middle;
+    color: #FFFFFF;
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    flex: 1;
+}
+
+/* Call to Action Button */
+.ai-class-1414 {
+    width: 100%;
+    text-align: center;
+    margin-top: 0;
+    flex-shrink: 0;
+}
+
+.ai-class-1515 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    width: 200px;
+    height: 44px;
+    padding: 10px 20px;
+    border-radius: 100px;
+    background: linear-gradient(268.03deg, #0057F2 0%, #1E88E5 100%);
+    color: #FFFFFF;
+    border: none;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0px -7px 24px 0px rgba(255, 255, 255, 0.5) inset, 0px 3px 12px 0px rgba(0, 87, 242, 0.5);
+    text-decoration: none;
+}
+
+.ai-class-1515:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px -7px 24px 0px rgba(255, 255, 255, 0.2) inset, 0px 5px 15px 0px rgba(0, 87, 242, 0.7);
+}
+
+.ai-class-1515:active {
+    transform: translateY(0);
+}
+
+.ai-class-1616 {
+    width: 16px;
+    height: 16px;
+    display: block;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    .ai-class-1515 {
+        width: 343px;
+        height: 44px;
+        padding-top: 12px;
+        padding-right: 24px;
+        padding-bottom: 12px;
+        padding-left: 24px;
+        border-radius: 100px;
+        gap: 8px;
+        opacity: 1;
+        background: linear-gradient(268.03deg, #0057F2 0%, #1E88E5 100%);
+        font-family: 'Be Vietnam Pro', sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.15px;
+        text-align: center;
+        vertical-align: middle;
+        color: #FFFFFF;
+    }
+}
+
+/* Responsive Design - Mobile First Approach */
+
+/* Tablet and up */
+@media (min-width: 481px) {
+    .ai-class-2222 {
+        padding-left: 24px;
+        padding-right: 24px;
+        /* gap: 28px; */
+    }
+
+    .ai-class-3333 {
+        gap: 16px;
+        margin-bottom: 24px;
+    }
+
+    .ai-class-6666 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .ai-class-7777 {
+        font-size: 16px;
+        line-height: 24px;
+        padding: 0 16px;
+    }
+
+    .ai-class-5555 {
+        width: 80px;
+        height: 80px;
+    }
+
+    .ai-class-8888 {
+        /* gap: 12px; */
+    }
+
+    .ai-class-9999 {
+        height: 200px;
+        /* border-radius: 16px; */
+    }
+
+    .ai-class-1112 {
+        padding: 12px 16px;
+        gap: 8px;
+    }
+
+    .ai-class-1212 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .ai-class-1313 {
+        font-size: 13px;
+        line-height: 18px;
+    }
+
+    .ai-class-1515 {
+        width: 220px;
+        height: 48px;
+        gap: 8px;
+        font-size: 16px;
+    }
+
+    .ai-class-1616 {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+/* Tablet - Tối ưu chiều cao để nắp full màn hình khi scroll */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .ai-class-1111 {
+        padding: 40px 0 60px 0;
+        min-height: 100vh;
+    }
+
+    .ai-class-2222 {
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 40px;
+        padding-bottom: 60px;
+        min-height: calc(100vh - 80px);
+    }
+
+    .ai-class-3333 {
+        gap: 24px;
+        margin-bottom: 40px;
+    }
+
+    .ai-class-6666 {
+        font-size: 36px;
+        line-height: 44px;
+    }
+
+    .ai-class-7777 {
+        font-size: 18px;
+        line-height: 26px;
+        max-width: 800px;
+        padding: 0;
+    }
+
+    .ai-class-5555 {
+        width: 90px;
+        height: 90px;
+    }
+
+    .ai-class-8888 {
+        gap: 16px;
+        max-width: 1280px;
+        margin-bottom: 40px;
+    }
+
+    .ai-class-9999 {
+        height: 320px;
+    }
+
+    .ai-class-1112 {
+        padding: 18px 20px;
+        gap: 10px;
+    }
+
+    .ai-class-1212 {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .ai-class-1313 {
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    .ai-class-1414 {
+        margin-top: 20px;
+    }
+
+    .ai-class-1515 {
+        width: 240px;
+        height: 52px;
+        padding: 12px 24px;
+        font-size: 16px;
+    }
+}
+
+/* Desktop and up */
+@media (min-width: 1025px) {
+    .ai-class-1111 {
+        padding: 0px 0 20px 0;
+    }
+
+    .ai-class-2222 {
+        padding-left: 40px;
+        padding-right: 40px;
+        /* gap: 32px; */
+        /* min-height: 1100px; */
+    }
+
+    .ai-class-3333 {
+        gap: 20px;
+        margin-bottom: 32px;
+    }
+
+    .ai-class-6666 {
+        font-size: 38px;
+        line-height: 46px;
+    }
+
+    .ai-class-7777 {
+        font-size: 18px;
+        line-height: 27px;
+        max-width: 800px;
+        padding: 0;
+    }
+
+    .ai-class-5555 {
+        width: 100px;
+        height: 100px;
+    }
+
+    .ai-class-8888 {
+        /* gap: 16px; */
+        max-width: 1280px;
+    }
+
+    .ai-class-9999 {
+        height: 260px;
+        /* border-radius: 20px; */
+    }
+
+    .ai-class-1112 {
+        padding: 16px 20px;
+        gap: 10px;
+    }
+
+    .ai-class-1212 {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .ai-class-1313 {
+        font-size: 14px;
+        line-height: 20px;
+        color: #B0B0B0;
+    }
+
+    .ai-class-1515 {
+        width: 240px;
+        height: 52px;
+        padding: 12px 24px;
+        font-size: 16px;
+    }
+}
+
+/* Large Desktop */
+@media (min-width: 1025px) {
+    .ai-class-2222 {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .ai-class-6666 {
+        font-size: 44px;
+        line-height: 52px;
+        max-width: 932px;
+    }
+
+    .ai-class-9999 {
+        height: 260px;
+    }
+}
+
+/* Extra Large Desktop */
+@media (min-width: 1441px) {
+    .ai-class-2222 {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+}
+
+.ai-class-9999 {
+    opacity: 0; /* Ẩn khối ban đầu */
+    transform: translateX(250px); /* Di chuyển bên phải một chút */
+    transition: opacity 1s ease, transform 1s ease; /* Hiệu ứng chuyển mượt mà */
+}
+
+.ai-class-9999.visible {
+    opacity: 1; /* Hiện khối */
+    transform: translateX(0); /* Trở về vị trí ban đầu */
+}

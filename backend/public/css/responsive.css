@@ -1,0 +1,774 @@
+/* Responsive wrapper for all devices including foldable phones */
+.welcome-wrapper {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Ensure proper display on foldable devices (9:16 aspect ratio when folded) */
+@media (max-width: 480px) and (orientation: portrait) {
+    .welcome-wrapper {
+        min-height: 100vh;
+    }
+
+    /* Fallback responsive cho toggle - sử dụng viewport units để tự động điều chỉnh */
+    /* Chỉ áp dụng nếu chưa được override bởi media query cụ thể bên dưới */
+    .container-toggle-parent {
+        bottom: max(200px, calc(100vh - 75vh)) !important;
+    }
+
+    /* Fallback responsive cho hero-actions buttons - tự động điều chỉnh text và kích thước */
+    .hero-actions {
+        flex-direction: row !important;
+        gap: clamp(10px, 2.5vw, 16px) !important;
+        flex-wrap: nowrap !important;
+    }
+
+    .hero-actions .btn-primary,
+    .hero-actions .btn-outline {
+        font-size: clamp(13px, 3.5vw, 16px) !important;
+        padding: 12px clamp(14px, 4vw, 20px) !important;
+        min-width: clamp(140px, 40vw, 180px) !important;
+        max-width: calc(50% - clamp(5px, 1.25vw, 8px)) !important;
+        line-height: clamp(18px, 4.5vw, 24px) !important;
+        letter-spacing: 0.15px !important;
+        border-radius: 100px !important;
+    }
+}
+
+/* Mobile devices - Giải pháp responsive tổng quát cho tất cả iPhone và mobile */
+/* iPhone 12 Pro, 13 Pro, 14 Pro và các màn hình tương tự (376px - 428px) */
+@media (min-width: 376px) and (max-width: 428px) and (orientation: portrait) {
+    .hero-content {
+        margin-top: 0 !important;
+        padding-top: 120px !important;
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        justify-content: flex-start !important;
+        text-align: left !important;
+        height: 100vh !important;
+        position: relative !important;
+    }
+
+    .hero-content > div {
+        width: 100% !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        text-align: left !important;
+    }
+
+    .hero-content h1 {
+        font-family: 'Be Vietnam Pro', sans-serif !important;
+        font-weight: 600 !important;
+        font-style: normal !important;
+        font-size: 27px !important;
+        line-height: 100% !important;
+        letter-spacing: 0.15px !important;
+        vertical-align: middle !important;
+        text-align: left !important;
+        width: 100% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        padding: 0 !important;
+        box-sizing: border-box !important;
+        color: #FFFFFF !important;
+    }
+    
+    /* Đảm bảo tất cả slide có cùng style */
+    .slide .hero-content {
+        margin-top: 0 !important;
+        padding-top: 120px !important;
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        justify-content: flex-start !important;
+        text-align: left !important;
+        height: 100vh !important;
+        position: relative !important;
+        width: 100% !important;
+    }
+    
+    .slide .hero-content > div {
+        width: 100% !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        text-align: left !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .container-toggle-parent {
+        bottom: 240px !important;
+        padding: 0 12px !important;
+    }
+
+    .info-container-wrapper {
+        bottom: 0 !important;
+        /* padding: 0 12px 20px 12px !important; */
+    }
+
+    /* Hero actions buttons - responsive cho iPhone 12 Pro, 13 Pro, 14 Pro */
+    .hero-actions {
+        flex-direction: row !important;
+        gap: 12px !important;
+        width: 100% !important;
+        flex-wrap: nowrap !important;
+        justify-content: flex-start !important;
+        align-items: center !important;
+    }
+
+    .hero-actions .btn-primary,
+    .hero-actions .btn-outline {
+        width: auto !important;
+        min-width: 150px !important;
+        max-width: calc(50% - 6px) !important;
+        font-size: 14px !important;
+        padding: 12px 16px !important;
+        gap: 4px !important;
+        border-radius: 100px !important;
+        line-height: 20px !important;
+        letter-spacing: 0.15px !important;
+    }
+}
+
+/* iPhone 14 Pro Max, 15 Pro Max và các màn hình lớn hơn (429px - 480px) */
+@media (min-width: 429px) and (max-width: 480px) and (orientation: portrait) {
+    .hero-content {
+        margin-top: 0 !important;
+        padding-top: 120px !important;
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        justify-content: flex-start !important;
+        text-align: left !important;
+        height: 100vh !important;
+        position: relative !important;
+    }
+
+    .hero-content > div {
+        width: 100% !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        text-align: left !important;
+    }
+
+    .hero-content h1 {
+        font-family: 'Be Vietnam Pro', sans-serif !important;
+        font-weight: 600 !important;
+        font-style: normal !important;
+        font-size: 27px !important;
+        line-height: 100% !important;
+        letter-spacing: 0.15px !important;
+        vertical-align: middle !important;
+        text-align: left !important;
+        width: 100% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        padding: 0 !important;
+        box-sizing: border-box !important;
+        color: #FFFFFF !important;
+    }
+    
+    /* Đảm bảo tất cả slide có cùng style */
+    .slide .hero-content {
+        margin-top: 0 !important;
+        padding-top: 120px !important;
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        justify-content: flex-start !important;
+        text-align: left !important;
+        height: 100vh !important;
+        position: relative !important;
+        width: 100% !important;
+    }
+    
+    .slide .hero-content > div {
+        width: 100% !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        text-align: left !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    /* Tăng bottom để toggle không bị tụt sâu trên màn hình lớn hơn */
+    .container-toggle-parent {
+        bottom: 280px !important;
+        padding: 0 12px !important;
+    }
+
+    .info-container-wrapper {
+        bottom: 0 !important;
+        /* padding: 0 12px 20px 12px !important; */
+    }
+
+    /* Hero actions buttons - responsive cho iPhone 14 Pro Max, 15 Pro Max */
+    .hero-actions {
+        flex-direction: row !important;
+        gap: 14px !important;
+        width: auto !important;
+        flex-wrap: nowrap !important;
+    }
+
+    .hero-actions .btn-primary,
+    .hero-actions .btn-outline {
+        width: auto !important;
+        min-width: 160px !important;
+        max-width: calc(50% - 7px) !important;
+        font-size: 15px !important;
+        padding: 12px 18px !important;
+        gap: 4px !important;
+        border-radius: 100px !important;
+        line-height: 22px !important;
+        letter-spacing: 0.15px !important;
+    }
+}
+
+/* iPhone SE và màn hình nhỏ - Fix toggle bị đè lên info-container */
+@media (max-width: 375px) {
+    .container-toggle-parent {
+        bottom: 200px !important;
+        padding: 0 12px !important;
+    }
+
+    .info-container-wrapper {
+        bottom: 0 !important;
+        /* padding: 0 12px 20px 12px !important; */
+    }
+
+    .info-container {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 8px !important;
+    }
+
+    .info-box {
+        padding: 12px 8px !important;
+    }
+
+    .info-box-content h3 {
+        font-size: 13px !important;
+        line-height: 18px !important;
+    }
+
+    .info-box-content p {
+        font-size: 11px !important;
+        line-height: 15px !important;
+    }
+
+    /* Hero content điều chỉnh cho màn nhỏ */
+    .hero-content {
+        margin-top: 0 !important;
+        padding-top: 120px !important;
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        justify-content: flex-start !important;
+        text-align: left !important;
+        height: 100vh !important;
+        position: relative !important;
+    }
+
+    .hero-content > div {
+        width: 100% !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        text-align: left !important;
+    }
+
+    /* Đảm bảo hero h1 đúng chuẩn design trên iPhone SE - KHÔNG override */
+    .hero-content h1 {
+        font-family: 'Be Vietnam Pro', sans-serif !important;
+        font-weight: 600 !important;
+        font-style: normal !important;
+        font-size: 27px !important;
+        line-height: 100% !important;
+        letter-spacing: 0.15px !important;
+        vertical-align: middle !important;
+        text-transform: none !important;
+        margin-bottom: 16px !important;
+        text-align: left !important;
+        width: 100% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        padding: 0 !important;
+        box-sizing: border-box !important;
+        color: #FFFFFF !important;
+    }
+    
+    /* Đảm bảo tất cả slide có cùng style */
+    .slide .hero-content {
+        margin-top: 0 !important;
+        padding-top: 120px !important;
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        justify-content: flex-start !important;
+        text-align: left !important;
+        height: 100vh !important;
+        position: relative !important;
+        width: 100% !important;
+    }
+    
+    .slide .hero-content > div {
+        width: 100% !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        text-align: left !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .hero-actions {
+        flex-direction: row !important;
+        gap: 12px !important;
+        width: 100% !important;
+        flex-wrap: nowrap !important;
+        justify-content: flex-start !important;
+        align-items: center !important;
+    }
+
+    .hero-actions .btn-primary,
+    .hero-actions .btn-outline {
+        width: 163.5px !important;
+        min-width: 163.5px !important;
+        max-width: 163.5px !important;
+        font-size: 14px !important;
+        padding-top: 12px !important;
+        padding-right: 16px !important;
+        padding-bottom: 12px !important;
+        padding-left: 16px !important;
+        gap: 4px !important;
+        border-radius: 100px !important;
+        height: 44px !important;
+        box-sizing: border-box !important;
+    }
+}
+
+/* Tablet 16:9 Landscape - Tối ưu giao diện cho tablet landscape */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .welcome-wrapper {
+        width: 100%;
+    }
+
+    /* Hero section tối ưu cho tablet */
+    .hero {
+        height: 100vh !important;
+        min-height: 100vh !important;
+    }
+
+    .hero-content {
+        margin-top: 100px !important;
+        padding: 0 40px !important;
+    }
+
+    .hero h1 {
+        font-size: clamp(32px, 4vw, 48px) !important;
+        line-height: clamp(40px, 5vw, 56px) !important;
+        margin-bottom: 16px !important;
+    }
+
+    .hero-content p {
+        font-size: 16px !important;
+        line-height: 24px !important;
+        margin-bottom: 24px !important;
+    }
+
+    /* Cards section - điều chỉnh spacing */
+    .cards {
+        gap: 16px !important;
+        padding: 0 20px !important;
+    }
+
+    .card {
+        width: calc(25% - 12px) !important;
+        min-width: 200px !important;
+        height: 280px !important;
+        margin: 0.5rem !important;
+    }
+
+    /* Image container - tối ưu cho tablet */
+    .image-container {
+        height: 100vh !important;
+        min-height: 100vh !important;
+    }
+
+    .image-card {
+        flex: 0 0 25% !important;
+        height: 100vh !important;
+    }
+
+    .image-card .text-default,
+    .image-card .text-hover {
+        font-size: 18px !important;
+        line-height: 26px !important;
+        bottom: 80px !important;
+        left: 15px !important;
+        right: 15px !important;
+    }
+
+    .text-hover-content {
+        font-size: 14px !important;
+        line-height: 20px !important;
+    }
+
+    /* Header tối ưu */
+    header .header-inner {
+        padding: 0 40px !important;
+    }
+
+    header .brand-logo {
+        width: 120px !important;
+        height: auto !important;
+    }
+
+    /* Container spacing */
+    .container {
+        padding-left: 40px !important;
+        padding-right: 40px !important;
+    }
+
+    /* Content section */
+    #content-container {
+        padding: 60px 40px !important;
+    }
+
+    .text_title1 {
+        font-size: clamp(28px, 3.5vw, 36px) !important;
+        line-height: clamp(36px, 4.5vw, 44px) !important;
+        margin-bottom: 16px !important;
+    }
+
+    .text_title2 {
+        font-size: 16px !important;
+        line-height: 24px !important;
+        margin-bottom: 40px !important;
+    }
+
+    /* Info container */
+    .info-container-wrapper {
+        padding: 0 40px !important;
+    }
+
+    .container-toggle-parent {
+        padding: 0 40px !important;
+    }
+
+    /* Business section tối ưu */
+    .bussiness-class-1111 {
+        padding: 60px 40px 80px !important;
+    }
+
+    /* AI section tối ưu */
+    .ai-class-2222 {
+        padding: 40px !important;
+    }
+
+    /* Kebad case section tối ưu */
+    .kebad-case-2222 {
+        padding: 0 40px !important;
+    }
+
+    .kebad-case-1414 {
+        padding: 40px !important;
+        gap: 24px !important;
+    }
+
+    .kebad-case-4444 {
+        font-size: 36px !important;
+        line-height: 44px !important;
+    }
+
+    /* Contact section tối ưu */
+    .contact-section {
+        padding: 60px 40px !important;
+    }
+
+    /* Feater section tối ưu */
+    .feater-section {
+        padding: 60px 40px !important;
+    }
+}
+
+/* Support for unfolded foldable devices (tablet-like) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .welcome-wrapper {
+        width: 100%;
+    }
+}
+
+/* iPad Air 5 (820x1180) - Portrait - Fix layout vỡ */
+@media (min-width: 810px) and (max-width: 830px) and (orientation: portrait),
+       (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) and (min-height: 1100px) {
+    /* Header fixes */
+    header {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    header .header-inner {
+        padding: 16px 24px !important;
+        margin: 0 !important;
+        max-width: 100% !important;
+        flex-wrap: nowrap !important;
+    }
+
+    header .brand-logo {
+        width: 140px !important;
+        height: auto !important;
+        max-width: 140px !important;
+    }
+
+    header .nav-list-header {
+        display: flex !important;
+        gap: 16px !important;
+        flex-wrap: nowrap !important;
+    }
+
+    header .nav-list-header li {
+        white-space: nowrap !important;
+    }
+
+    header .nav-list-header li a {
+        font-size: 14px !important;
+        padding: 8px 12px !important;
+    }
+
+    header .lang {
+        display: flex !important;
+        align-items: center !important;
+        gap: 8px !important;
+    }
+
+    header .lang .vn-text {
+        display: inline !important;
+        font-size: 14px !important;
+    }
+
+    header .lang .menu-toggle {
+        display: none !important;
+    }
+
+    /* Hero/Slider fixes */
+    .hero-container {
+        width: 100% !important;
+        overflow: hidden !important;
+    }
+
+    .hero {
+        height: 100vh !important;
+        min-height: 100vh !important;
+        max-height: 100vh !important;
+    }
+
+    .slide {
+        height: 100vh !important;
+        min-height: 100vh !important;
+        max-height: 100vh !important;
+    }
+
+    .hero-content {
+        margin-top: clamp(120px, 15vh, 180px) !important;
+        padding: 0 32px !important;
+        max-width: 100% !important;
+    }
+
+    .hero h1 {
+        font-size: clamp(32px, 4.5vw, 42px) !important;
+        line-height: clamp(40px, 5.5vw, 52px) !important;
+        margin-bottom: 20px !important;
+        max-width: 100% !important;
+        word-wrap: break-word !important;
+    }
+
+    .hero-content p {
+        font-size: 16px !important;
+        line-height: 24px !important;
+        margin-bottom: 28px !important;
+        max-width: 100% !important;
+        display: block !important;
+    }
+
+    .hero-actions {
+        flex-direction: row !important;
+        gap: 16px !important;
+        flex-wrap: wrap !important;
+    }
+
+    .hero-actions .btn-primary,
+    .hero-actions .btn-outline {
+        font-size: 16px !important;
+        padding: 12px 20px !important;
+        min-width: 160px !important;
+    }
+
+    /* Toggle và Info container */
+    .container-toggle-parent {
+        padding: 0 32px !important;
+        bottom: 220px !important;
+    }
+
+    .info-container-wrapper {
+        padding: 0 32px 24px 32px !important;
+        bottom: 0 !important;
+    }
+
+    .info-container {
+        grid-template-columns: repeat(4, 1fr) !important;
+        gap: 12px !important;
+    }
+
+    .info-box {
+        padding: 16px 12px !important;
+    }
+
+    .info-box-content h3 {
+        font-size: 16px !important;
+        line-height: 22px !important;
+    }
+
+    .info-box-content p {
+        font-size: 12px !important;
+        line-height: 18px !important;
+    }
+
+    /* Content section fixes - Giảm chiều cao để scroll nắp full màn */
+    #content-container {
+        padding: 30px 32px 40px 32px !important;
+        max-width: 100% !important;
+        overflow: hidden !important;
+    }
+
+    #content-container > p:first-child img {
+        width: 60px !important;
+        height: auto !important;
+        margin-bottom: 16px !important;
+    }
+
+    .text_title1 {
+        font-size: clamp(28px, 3.8vw, 36px) !important;
+        line-height: clamp(36px, 4.8vw, 44px) !important;
+        margin-bottom: 12px !important;
+        padding: 0 16px !important;
+    }
+
+    .text_title2 {
+        font-size: 15px !important;
+        line-height: 22px !important;
+        margin-bottom: 24px !important;
+        padding: 0 16px !important;
+        max-width: 100% !important;
+    }
+
+    /* Cards section - Giảm chiều cao */
+    .cards {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 12px !important;
+        padding: 0 16px !important;
+        max-width: 100% !important;
+        margin: 0 auto 20px auto !important;
+    }
+
+    .card {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: 240px !important;
+        margin: 0 !important;
+        border-radius: 18px !important;
+    }
+
+    .card .content {
+        padding: 20px 18px !important;
+    }
+
+    .card .text-top {
+        font-size: 42px !important;
+        line-height: 40px !important;
+        margin-bottom: 6px !important;
+    }
+
+    .card .text-bot {
+        font-size: 13px !important;
+        line-height: 18px !important;
+    }
+
+    .card .logo_h {
+        width: 8rem !important;
+        height: 8rem !important;
+    }
+
+    /* Image container - Giảm chiều cao */
+    .image-container {
+        height: 100vh !important;
+        min-height: 100vh !important;
+        max-height: 100vh !important;
+        overflow: hidden !important;
+    }
+
+    .image-card {
+        flex: 0 0 25% !important;
+        height: 100vh !important;
+        max-height: 100vh !important;
+    }
+
+    .image-card img {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+    }
+
+    .image-card .text-default,
+    .image-card .text-hover {
+        font-size: 17px !important;
+        line-height: 24px !important;
+        bottom: 70px !important;
+        left: 12px !important;
+        right: 12px !important;
+    }
+
+    .image-card .text-title-spacing,
+    .image-card .text-hover-title-spacing {
+        font-size: 17px !important;
+        line-height: 24px !important;
+        margin-bottom: 12px !important;
+    }
+
+    .image-card .text-hover-content {
+        font-size: 13px !important;
+        line-height: 19px !important;
+        margin-top: 8px !important;
+    }
+
+    .image-card .icon {
+        width: 50px !important;
+        margin-bottom: 10px !important;
+    }
+
+    /* Container general */
+    .container {
+        padding-left: 32px !important;
+        padding-right: 32px !important;
+        max-width: 100% !important;
+    }
+}
+

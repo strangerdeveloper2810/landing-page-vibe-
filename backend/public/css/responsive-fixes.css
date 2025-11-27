@@ -1,0 +1,195 @@
+/* Responsive Design Fixes - Bug #20 */
+
+/* Mobile devices (up to 576px) */
+@media (max-width: 576px) {
+    /* Hero section */
+    .hero {
+        min-height: auto !important;
+        padding: 40px 16px !important;
+    }
+
+    .hero h1 {
+        font-size: 24px !important;
+        line-height: 1.3 !important;
+    }
+
+    .hero p {
+        font-size: 14px !important;
+        line-height: 1.5 !important;
+    }
+
+    .hero-actions {
+        flex-direction: column !important;
+        gap: 12px !important;
+    }
+
+    .hero-actions .btn {
+        width: 100% !important;
+        max-width: 280px !important;
+    }
+
+    /* Content container */
+    #content-container {
+        padding: 30px 16px !important;
+    }
+
+    .cards {
+        flex-direction: column !important;
+        gap: 16px !important;
+    }
+
+    .card {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+    }
+
+    /* Image cards */
+    .image-container {
+        flex-direction: column !important;
+        height: auto !important;
+    }
+
+    .image-card {
+        flex: 1 1 auto !important;
+        height: 300px !important;
+    }
+
+    /* Feater section */
+    .feater-class-3333 {
+        grid-template-columns: 1fr !important;
+    }
+
+    .feater-class-4444 {
+        font-size: 36px !important;
+    }
+
+    .feater-class-7777 {
+        flex-direction: column !important;
+    }
+
+    /* Business section */
+    #business-hero .row {
+        margin: 0 !important;
+    }
+
+    #business-hero .col-12 {
+        padding: 8px !important;
+    }
+
+    /* Footer */
+    .footer-content {
+        grid-template-columns: 1fr !important;
+    }
+
+    .footer-left-columns {
+        grid-template-columns: 1fr !important;
+        gap: 30px !important;
+    }
+
+    .email-subscription {
+        margin-left: 0 !important;
+    }
+}
+
+/* Tablets (577px to 992px) */
+@media (min-width: 577px) and (max-width: 992px) {
+    .hero h1 {
+        font-size: 36px !important;
+    }
+
+    .hero p {
+        font-size: 16px !important;
+    }
+
+    #content-container {
+        padding: 40px 24px !important;
+    }
+
+    .cards {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 20px !important;
+    }
+
+    .card {
+        width: 100% !important;
+        margin: 0 !important;
+    }
+
+    .image-container {
+        height: auto !important;
+    }
+
+    .image-card {
+        height: 400px !important;
+    }
+
+    .feater-class-3333 {
+        grid-template-columns: 1fr !important;
+        gap: 40px !important;
+    }
+
+    .footer-left-columns {
+        gap: 40px !important;
+    }
+}
+
+/* Large tablets and small desktops (993px to 1200px) */
+@media (min-width: 993px) and (max-width: 1200px) {
+    .hero h1 {
+        font-size: 44px !important;
+    }
+
+    #content-container {
+        padding: 50px 32px !important;
+    }
+
+    .cards {
+        gap: 16px !important;
+    }
+
+    .card {
+        width: calc(25% - 12px) !important;
+    }
+}
+
+/* Landscape orientation fixes */
+@media (max-height: 600px) and (orientation: landscape) {
+    .hero {
+        min-height: auto !important;
+        padding: 30px 20px !important;
+    }
+
+    .feater-class-1111 {
+        min-height: auto !important;
+        padding: 40px 20px !important;
+    }
+
+    #content-container {
+        min-height: auto !important;
+    }
+}
+
+/* Fix overflow issues */
+body {
+    overflow-x: hidden !important;
+}
+
+.container, .hero-container, #content-container, .feater-class-2222, .business-container-box {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+}
+
+/* Ensure images are responsive */
+img {
+    max-width: 100% !important;
+    height: auto !important;
+}
+
+/* Fix floating elements on mobile */
+@media (max-width: 768px) {
+    .icon-base {
+        display: none !important;
+    }
+}

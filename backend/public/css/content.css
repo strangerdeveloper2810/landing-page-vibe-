@@ -1,0 +1,205 @@
+@media (min-width: 768px) {
+    .text-hover-content-pc-margin {
+        margin-left: 15px !important;
+    }
+
+    .image-container {
+        height: 100vh !important;
+    }
+
+    .image-card {
+        height: 100vh !important;
+    }
+
+    .image-card .text-hover {
+        display: none !important;
+    }
+
+    .image-card:hover .text-hover {
+        display: inline-block !important;
+    }
+
+    .icon-spacing {
+        margin-left: 15px !important;
+        margin-bottom: 12px !important;
+    }
+
+    .text-title-spacing {
+        margin-left: 15px !important;
+        margin-right: 15px !important;
+        margin-bottom: 16px !important;
+    }
+
+    .text-hover-title-spacing {
+        margin-left: 15px !important;
+        margin-bottom: 16px !important;
+    }
+}
+
+/* Tablet 16:9 Landscape - Tối ưu giao diện cho tablet landscape */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    /* Content Container */
+    #content-container {
+        padding: 40px 30px 50px !important;
+    }
+
+    #content-container > p:first-child img {
+        width: 60px !important;
+        height: auto !important;
+        margin-bottom: 20px !important;
+    }
+
+    .text_title1 {
+        font-size: clamp(32px, 4vw, 40px) !important;
+        line-height: clamp(40px, 5vw, 48px) !important;
+        margin-bottom: 16px !important;
+        padding: 0 20px !important;
+    }
+
+    .text_title2 {
+        font-size: 15px !important;
+        line-height: 22px !important;
+        margin-bottom: 30px !important;
+        width: 80% !important;
+        max-width: 900px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    /* Cards section - Tối ưu layout cho tablet 16:9 */
+    .cards {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 20px !important;
+        padding: 0 10px !important;
+        max-width: 800px !important;
+        margin: 0 auto !important;
+    }
+
+    .card {
+        width: 100% !important;
+        max-width: 380px !important;
+        height: 260px !important;
+        margin: 0 !important;
+        border-radius: 20px !important;
+    }
+
+    .card .content {
+        padding: 24px 20px !important;
+    }
+
+    .card .text-top {
+        font-size: 52px !important;
+        line-height: 48px !important;
+        margin-bottom: 8px !important;
+    }
+
+    .card .text-bot {
+        font-size: 14px !important;
+        line-height: 20px !important;
+    }
+
+    .card .logo_h {
+        width: 80px !important;
+        height: 80px !important;
+    }
+
+    /* Image container section - Tối ưu cho tablet 16:9 */
+    .image-container {
+        height: 100vh !important;
+        min-height: 100vh !important;
+    }
+
+    .image-card {
+        flex: 0 0 25% !important;
+        height: 100vh !important;
+    }
+
+    .image-card .text-default,
+    .image-card .text-hover {
+        font-size: 16px !important;
+        line-height: 22px !important;
+        bottom: 60px !important;
+        left: 12px !important;
+        right: 12px !important;
+    }
+
+    .image-card .text-title-spacing,
+    .image-card .text-hover-title-spacing {
+        font-size: 16px !important;
+        line-height: 22px !important;
+        margin-bottom: 12px !important;
+    }
+
+    .image-card .text-hover-content {
+        font-size: 13px !important;
+        line-height: 18px !important;
+        margin-top: 8px !important;
+    }
+
+    .image-card .icon {
+        width: 50px !important;
+        margin-bottom: 10px !important;
+    }
+}
+
+/* Tablet Portrait - Tối ưu cho tablet portrait */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    #content-container {
+        padding: 50px 40px 60px !important;
+    }
+
+    .text_title1 {
+        font-size: clamp(28px, 3.5vw, 36px) !important;
+        line-height: clamp(36px, 4.5vw, 44px) !important;
+        margin-bottom: 20px !important;
+    }
+
+    .text_title2 {
+        font-size: 16px !important;
+        line-height: 24px !important;
+        margin-bottom: 40px !important;
+    }
+
+    .cards {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 24px !important;
+        padding: 0 20px !important;
+        max-width: 700px !important;
+        margin: 0 auto !important;
+    }
+
+    .card {
+        width: 100% !important;
+        height: 280px !important;
+        margin: 0 !important;
+    }
+
+    .card .text-top {
+        font-size: 48px !important;
+        line-height: 44px !important;
+    }
+
+    .card .text-bot {
+        font-size: 15px !important;
+        line-height: 22px !important;
+    }
+
+    .image-container {
+        height: 100vh !important;
+    }
+
+    .image-card {
+        flex: 0 0 25% !important;
+        height: 100vh !important;
+    }
+
+    .image-card .text-default,
+    .image-card .text-hover {
+        font-size: 18px !important;
+        line-height: 26px !important;
+        bottom: 80px !important;
+    }
+}
+
